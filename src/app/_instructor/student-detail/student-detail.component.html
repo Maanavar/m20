@@ -1,0 +1,1076 @@
+<app-main-page></app-main-page>
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>
+              <li class="breadcrumb-item me-2"><a href="#">My Subjects</a></li>
+              <li class="breadcrumb-item me-2"><a href="#">Artificial Intelligence</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Files & Folders</li>
+            </ol>
+          </nav>
+          <div class="profile-details">
+            <h4 class="page-title pb-4">Artificial Intelligence</h4>
+            <div class="subject-tab">
+                <ul class="nav nav-tabs list-tabs mb-4 mb-xl-0 justify-content-center border-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true"><img src="assets/images/file-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false"><img src="assets/images/assignment.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gradebook-tab" data-bs-toggle="tab" data-bs-target="#gradebook" type="button" role="tab" aria-controls="gradebook" aria-selected="false"><img src="assets/images/gradebook.svg"></button>
+                      </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="drafts-tab" data-bs-toggle="tab" data-bs-target="#drafts" type="button" role="tab" aria-controls="drafts" aria-selected="false"><img src="assets/images/people-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false"><img src="assets/images/course-discussion-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="false"><img src="assets/images/other-icon.svg"></button>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Files & Folders</h4>
+                            <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                                <li class="text-dark-blue fw-bold mx-3">
+                                  <img src="assets/images/move-icon.svg" class="me-1">Download
+                                </li>
+                                <li class="text-dark-blue fw-bold mx-3">
+                                  <img src="assets/images/delete-icon.svg" class="me-1">Delete
+                                </li>
+                                <li class="bg-white text-grey mx-2 align-self-center">
+                                    <a href="#" class="filter "><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                                </li>
+                                <li  class="nav-item ms-2">
+                                    <button type="button"  routerLink="/new-subject" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1">+ <span class="ms-2">Add New</span></button>
+                                </li>
+                               
+                              </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="position-relative">
+                                                <input id="all" type="checkbox" value="value1">
+                                                  <label for="all"></label>
+                                              </div>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Files</th>
+                                        <th>Size</th>
+                                        <th>Last Modified</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr routerLink="/lectures">
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Syllabus
+                                        </th>
+                                        <td>5 Files</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                  <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Exam Files
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Lectures
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/word-icon.svg" class="img-fluid me-3">File name lorem ipsum
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/power-point-icon.svg" class="img-fluid me-3">File name lorem ipsum
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>                                      
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="published" role="tabpanel" aria-labelledby="published-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">All Assignments <img src="assets/images/drop-arrow.svg" class="ms-1"></h4>
+                            <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                                <li  class="nav-item ms-2">
+                                    <button type="button" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1" data-bs-toggle="modal" data-bs-target="#createassignment">+ <span class="ms-2">Add New</span></button>
+                                </li>
+                               
+                              </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Deadline</th>
+                                        <th>Submissions</th>
+                                        <th>Graded</th>
+                                        <th>Status</th>
+                                        <th>Submitted on</th>
+                                        <th>Mark</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th >
+                                          <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> K-Means Clustering
+                                        </th>
+                                        <td>29 March, 2021</td>
+                                        <td>75% Submited</td>
+                                        <td>24% Graded</td>
+                                        <td class="text-violet">
+                                            Published
+                                        </td>
+                                        <td>N/A</td>
+                                        <td class="text-dark-blue fw-bold">N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                          <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Logistic Regression
+                                        </th>
+                                        <td>N/A</td>
+                                        <td>N/A</td>
+                                        <td>N/A</td>
+                                        <td class="text-red">
+                                            Draft
+                                        </td>
+                                        <td>21 March, 2021</td>
+                                        <td class="text-dark-blue fw-bold">84</td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                          <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Linear Regression
+                                        </th>
+                                        <td>15 July, 2021</td>
+                                        <td>100% Submited</td>
+                                        <td>100% Graded</td>
+                                        <td class="text-violet">
+                                            Published
+                                        </td>
+                                        <td class="text-dark-red">Overdue</td>
+                                        <td class="text-dark-blue fw-bold">N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <th >
+                                          <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                        </th>
+                                        <td>20 Oct 2021</td>
+                                        <td>100% Submited</td>
+                                        <td>75% Graded</td>
+                                        <td class="text-violet">
+                                            Published
+                                        </td>
+                                        <td>21 March, 2021</td>
+                                        <td class="text-dark-blue fw-bold">N/A</td>
+                                    </tr>                             
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="gradebook" role="tabpanel" aria-labelledby="gradebook-tab">
+                        <div class="d-flex mb-3 grade-title" routerLink="/subject-folder">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Gradebook </h4>
+                            <ul class="p-0 m-0">
+                                <li>Overall grade <span class="text-blue ms-3">67.3%</span></li>
+                            </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Submission Date</th>
+                                        <th>Mark</th>
+                                        <th></th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Regression Algorithm
+                                        </th>
+                                        <td>N/A</td>
+                                        <td  class="fw-bold text-dark-blue">N/A</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> HTML coding and CSS
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr>            
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+                        <div class="d-xl-flex justify-content-between mb-3" routerLink="/subject-folder">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center"><img src="assets/images/blue-back-arrow.svg"> Wilson Kilbert</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="table-responsive course-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Submission Date</th>
+                                                <th>Mark</th>
+                                                <th></th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th >
+                                                    <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> K-Means Clustering
+                                                </th>
+                                                <td>27 October, 2021</td>
+                                                <td class="fw-bold text-dark-blue">84</td>
+                                                <td>
+                                                    <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <th >
+                                                    <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Linear Regression
+                                                </th>
+                                                <td class="text-dark-red">Overdue</td>
+                                                <td class="fw-bold text-dark-blue">N/A</td>
+                                                <td></td>
+                                            </tr> 
+                                            <tr>
+                                                <th >
+                                                    <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Logistic Regression
+                                                </th>
+                                                <td>21 September, 2021</td>
+                                                <td  class="fw-bold text-dark-blue">84</td>
+                                                <td>
+                                                    <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <th >
+                                                    <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment
+                                                </th>
+                                                <td>08th September, 2021</td>
+                                                <td  class="fw-bold text-dark-blue">84</td>
+                                                <td>
+                                                    <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th >
+                                                    <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                                </th>
+                                                <td>21 July, 2021</td>
+                                                <td  class="fw-bold text-dark-blue">84</td>
+                                                <td>
+                                                    <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                                </td>
+                                            </tr>              
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-3 pt-1">
+                                <div class="student-ptofile-card card-shadow mt-lg-5">
+                                    <div class="card-header bg-0 pb-3 text-center">
+                                        <img src="assets/images/std.png" class="img-fluid rounded-circle mb-3">
+                                        <h6 class="fw-bold text-dark-blue ">Wilson Kilbert</h6>
+                                        <a href="#" class="text-blue text-decoration-none">wilsonkilbert@gmail.com</a>
+                                    </div>
+                                    <div class="card-body bg-0  text-center">
+                                        <p class="text-grey mb-0">Overall grade</p>
+                                        <h1 class="fw-bold text-blue mb-0">68 %</h1>
+                                    </div>
+                                    <div class="card-footer bg-0 pt-3 pb-0 border-0 text-center">
+                                        <h5 class="fw-bold text-red">View Profile <img src="assets/images/red-arrow.svg"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Discussion Forum</h4>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="discussion-search bg-white rounded-5 d-flex">
+                                    <div class="align-self-center">
+                                        <img src="assets/images/user-profile.svg" class="me-2 rounded-circle">
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Add your questions here...">
+                                </div>
+                                <div class="d-xl-flex justify-content-between my-3 ">
+                                    <ul class="posts p-0 m-0 align-self-center">
+                                        <li class="active">All posts</li>
+                                        <li>Your posts</li>
+                                    </ul>
+                                    <form>
+                                    <div class="form-group">
+                                        <select class="form-select post-select bg-white border-0 h-auto" aria-label="Default select example">
+                                            <option selected>Popular posts</option>
+                                        </select>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="discussion-card mb-3">
+                                    <div class="card-header d-flex justify-content-between p-0 border-0">
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <img src="assets/images/student7.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                <span>BE - CSE  - 2nd Sem - A</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown align-self-center">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                    <div class="card-footer border-0 pt-3 p-0 border-0">
+                                        <ul class="p-0">
+                                            <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                            <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                        </ul>
+                                        <div class="comment-field rounded-5 d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                            </div>
+                                            <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discussion-card mb-3">
+                                    <div class="card-header d-flex justify-content-between p-0 border-0">
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <img src="assets/images/student7.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                <span>BE - CSE  - 2nd Sem - A</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown align-self-center">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                    <div class="card-footer border-0 pt-3 p-0 border-0">
+                                        <ul class="p-0">
+                                            <li><img src="assets/images/filled-heart-icon.svg" class="me-2">You and 6 others like this</li>
+                                            <li><img src="assets/images/comment.svg" class="me-2">5 comments</li>
+                                        </ul>
+                                        <div class="comment-field rounded-5 d-flex mb-3">
+                                            <div class="align-self-center">
+                                                <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                            </div>
+                                            <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                        </div>
+                                        <div class="discussion-card comment-replay mb-3">
+                                            <div class="card-header d-flex justify-content-between p-0 border-0">
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <img src="assets/images/student7.png" class="rounded-circle">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                        <span>BE - CSE  - 2nd Sem - A</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 border-0">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                            </div>
+                                            <div class="card-footer border-0  p-0 border-0">
+                                                <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                    <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                    <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="discussion-card comment-replay mb-3">
+                                            <div class="card-header d-flex justify-content-between p-0 border-0">
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <img src="assets/images/student7.png" class="rounded-circle">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                        <span>BE - CSE  - 2nd Sem - A</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 border-0">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                            </div>
+                                            <div class="card-footer border-0  p-0 border-0">
+                                                <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                    <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                    <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="load-more"><p class="fw-bold text-center text-grey mt-4 mb-1">Load more comments</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-4 card-shadow rounded-5 py-3 px-2 description-card">
+                                    <div class="card-header border-0 bg-0 pb-0 justify-content-between d-flex">
+                                        <h6 class="fw-bold text-dark-blue mb-0">Description</h6>
+                                        <a href="" class="fw-bold text-dark-blue"><img src="assets/images/edit.svg"> Edit</a>
+                                    </div>
+                                    <div class="card-body pb-2">
+                                        <p class="text-grey mb-0">Welcome to the discussion forums! Ask questions, debate ideas, and find classmates who share your goals. Browse through the posts, questions and comments posted for this class.</p>
+                                    </div>
+                                </div>
+                                <div class="moderators mt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="pe-3">
+                                            <h6 class="fw-bold text-dark-blue mb-2">Moderators</h6>
+                                            <p class="text-grey">Modurators can delete discussion posts and comments of students</p>
+                                        </div>
+                                        <a href="" class="fw-bold text-dark-blue w-25 text-decoration-none">+ Add</a>
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student2.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Peter Parker</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student3.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Deepan Remijious</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student4.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Ruban Karthik</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student5.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Jai Surya</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Subject Overview</h4>   
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-7">  
+                                <div class="profile-card card-shadow bg-white p-0 mb-3 review-block p-4">
+                                    <div class="d-flex justify-content-between card-title p-2">
+                                        <h4 class="text-dark-blue fw-bold mb-0 align-self-center">Description</h4>
+                                        <div class="text-dark-blue fw-bold"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <p class="text-dark-blue mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                </div>
+                                <div class="profile-card card-shadow bg-white p-0 mb-3 review-block p-4">
+                                    <div class="d-flex justify-content-between  card-title p-2">
+                                        <h4 class="text-dark-blue fw-bold mb-0">Syllabus</h4>
+                                        <div class="text-dark-blue fw-bold"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <p class="text-dark-blue mb-0">The object of this course is to teach students the general concepts of relational databases and how to design a database that is anomaly free. Students will learn to design, create, populate, and query a database by working with the Oracle ™ database engine and the SQL language. Students will also learn basic database administration skills such as creating users, granting/revoking privileges individually or collectively to several users through the use of roles.</p>
+                                        <div class="mt-4">
+                                            <p class="fw-bold text-dark-blue">The main objectives of this course are:</p>
+                                            <ul class="px-4 m-0">
+                                                <li>To emphasize the features of a Relational Database, in particular, the most widely used model, the relational model, and the use of the Oracle ™. Know the basic components of a relational database management system (RDBMS) and how these parts interact during the normal activities of a database engine.</li>
+                                                <li>To construct a conceptual model (E/R diagram) and a physical model (Relational Design) from a general data description that runs in an Oracle ™ engine. Create and populate the database and impose the necessary constraints to satisfy data integrity and operational requirements.</li>
+                                                <li>To normalize a database from 1NF to BCNF and the necessity of this process to avoid data anomalies by identifying partial and transitive functional dependencies by the correct application of Armstrong’s inference axioms.</li>
+                                                <li>To write queries in SQL that implement the theoretical relational database operators such as selection, projection, joins. Learn how to impose and enforce constraints on the data to satisfy the requirements of some of the normal forms.</li>
+                                                <li>To write queries in SQL that uses features such as group function (AVG, MIN, MAX, COUNT), individual functions (arithmetic functions, character, conversion functions), processing of date and time information using functions such as TO_DATE, SYSDATE pseudo columns.</li>
+                                                <li>To write basic reports using the BREAK and COMPUTE commands of SQL Plus™.</li>
+                                                <li>To write complex queries (subqueries, correlated queries, update tables, inserting/deleting rows from tables using subqueries) and hiding data through the use of Views.</li>
+                                                <li>To be able to accomplish basic administrative tasks such as create/delete users, grant/revoke privileges to users individually or through roles.</li>
+                                                <li>Managing a successful semester-long project from initial description through design, creation, and implementation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5">
+                                <div class="cover-change position-relative pb-3">
+                                    <img src="assets/images/cover-change.png" class="img-fluid">
+                                    <p><img src="assets/images/white-pen.png" class="me-2"> Change Cover</p>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <div class="d-flex justify-content-between ">
+                                        <h6 class="text-dark-blue fw-bold mb-4">General Schedules</h6>
+                                        <div class="text-dark-blue fw-bold"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <ul class="nav nav-tabs general-schedule mb-3 mb-xl-0 justify-content-between" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button" role="tab" aria-controls="mon" aria-selected="true">Mo</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button" role="tab" aria-controls="tue" aria-selected="false">Tu</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button" role="tab" aria-controls="wed" aria-selected="false">We</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab" aria-controls="thu" aria-selected="false">Th</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab" aria-controls="fri" aria-selected="false">Fr</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab" aria-controls="sat" aria-selected="false">Sa</button>
+                                        </li>                                
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab" aria-controls="sun" aria-selected="false">Su</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+                                            <div class="shedule bg-white d-lg-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-lg-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>                                
+                                        </div>
+                                        <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="thu-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>                
+                                        <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">6
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="sun-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <h6 class="text-dark-blue fw-bold mb-2">Subject Details</h6>
+                                    <div class="course-card master-card card-shadow bg-white p-3 h-100">
+                                        <div class="align-self-center mb-2">
+                                            <span class="badge bg-red text-white">SBJ1516516</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="text-dark-blue fw-bold">Artificial Intelligence</h6>
+                                                <ul class="text-grey m-0 p-0 subject-list"><li>Core </li><li>Theoritical</li></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <h6 class="text-dark-blue fw-bold mb-2">Assigned to </h6>
+                                    <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                        <div class="align-self-center mb-2">
+                                            <span class="badge bg-red text-white">Sem II - A</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="text-dark-blue fw-bold">BE - Computer Science</h6>
+                                                <p class="text-grey">Dept. of Computer Science</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between student-list">
+                                            <ul class="p-0 m-0">
+                                                <li><span>A</span></li>
+                                                <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                                <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                                <li class="ms-2 text-grey">+ 28</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="modal fade" id="createassignment" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Create New Assignment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="nav nav-pills mb-3 justify-content-center text-center pt-3 mb-0" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-create1-tab" data-bs-toggle="pill" data-bs-target="#pills-create1" type="button" role="tab" aria-controls="pills-create1" aria-selected="true"><span>1</span><p>Basic Info</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-create2-tab" data-bs-toggle="pill" data-bs-target="#pills-create2" type="button" role="tab" aria-controls="pills-create2" aria-selected="false"><span>2</span> <p>Advance Info</p></button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-create1" role="tabpanel" aria-labelledby="pills-create1-tab">
+                    <h4>HTML coding and css</h4>
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Subject Name</label>
+                            <select aria-label="Default select example" class="form-select">
+                                <option selected="">Computer science and coding</option>
+                                <option value="1">EC</option>
+                            </select>
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Subject Name</label>
+                            <textarea type="text" rows="3" class="form-control" placeholder="">Lorem ipsum dolor sit amet, consectetur adipisc ing elit. Cras mollis ante vel auctor tempor. Orci varius natoque sum dolor sit.</textarea>
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Syllabus</label>
+                            <div class="form-group files">
+                                <input type="file" class="form-control" multiple="" >
+                                <div class="file-data text-center">
+                                    <img src="assets/images/file.svg">
+                                    <p>Drop your file here, or <span class="text-red">browse</span></p>
+                                    <span>Support: Doc, Pdf, Jpg, Png</span>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="form-group   mb-3 alert  border-0 alert-dismissible fade show" role="alert">
+                            <img src="assets/images/word-icon.svg" class="me-2"> documentname.doc
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                          <div class="form-group   mb-3 alert  border-0 alert-dismissible fade show" role="alert">
+                            <img src="assets/images/power-point-icon.svg" class="me-2"> documentname.doc
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="pills-create2" role="tabpanel" aria-labelledby="pills-create2-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Assign to</label>
+                            <select aria-label="Default select example" class="form-select">
+                                <option selected="">BE - CSE - 2nd Sem - A</option>
+                                <option value="1">BE - CSE - 2nd Sem - B</option>
+                            </select>
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Date</label>
+                            <div class="row">
+                                <div class="col-3">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">31</option>
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">November</option>
+                                        <option value="1">October</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">2021</option>
+                                        <option value="1">2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Date</label>
+                            <div class="row">
+                                <div class="col-3">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">31</option>
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">November</option>
+                                        <option value="1">October</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <select aria-label="Default select example" class="form-select">
+                                        <option selected="">2021</option>
+                                        <option value="1">2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Max Marks</label>
+                            <input type="text" class="form-control" value="100">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Minimun Pass Marks</label>
+                            <input type="text" class="form-control" value="35">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>

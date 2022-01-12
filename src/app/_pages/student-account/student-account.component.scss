@@ -1,0 +1,93 @@
+.account-card{
+    border: 1px solid #D1D0E8;
+    box-shadow: 2px 4px 4px rgba(39, 71, 233, 0.16);
+    border-radius: 8px;
+}
+.account-card ul li{
+    width: 33%;
+}
+.account-title{padding: 0 35px;}
+.account-title p{
+    font-size: 14px;
+    color: var(--grey-color);
+}
+select{
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOCAwTDMuOTcgNkwwIDBIOFoiIGZpbGw9IiM4Njg5OTciLz4KPC9zdmc+Cg==");
+    background-size: 8px;
+}
+.gender-selection{display: grid;width: 90%;}
+.gender-selection:not(:first-child):not(:last-child){
+    margin: 0 10px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+   text-align: center;
+   padding: 14px 0;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: var(--black-color);
+}
+[type="radio"]:checked + label{
+    color: var(--blue-color) !important;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(203, 203, 203, 0.5);
+    border-radius: 6px;
+    background: transparent;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 100%;
+    height: 48px;
+    border: 1px solid var(--blue-color);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 6px;
+    -webkit-transition: all 0.2s ease;
+    box-shadow: 2px 4px 4px rgba(39, 71, 233, 0.16);
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.back-btn{
+    color: var(--grey-color);
+    font-size: 13px;
+    font-weight: 600;
+}
+.footer-content p{
+    font-size: 14px;
+    color: var(--dark-blue-color);
+}
+.footer-content p a{font-weight: 600;}
+
+
+/* media Query starts */
+@media(max-width:767px){
+    .account-title{padding: 0 0px;}
+}
+/* media Query Ends */

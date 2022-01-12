@@ -1,0 +1,62 @@
+<body class="c-app">    
+    <div class="c-wrapper">
+      <header class="c-header">
+            <div class="col-12">
+              <div class="d-flex bg-white border-bottom">
+                <div class="p-3 flex-fill bg-white m--margin-left-20 m--margin-topM-5">
+                  <div>
+                    <img src="assets/images/logo.png" alt="" class="">
+                  </div> 
+                </div>                
+                <div class="p-3 flex-fill bg-white m--margin-left-20">
+                  <div class="d-flex flex-row-reverse bg-white ">
+                    <div class="p-4 bg-white"><strong>Contact Us</strong></div>
+                    <div class="p-4 bg-white"><strong>Support</strong></div>                    
+                    <div class="p-4 bg-white"><strong>For Instructors</strong></div>
+                    <div class="p-4 bg-white"><strong>For Institutions</strong></div>
+                  </div>    
+                </div>
+                <div class="p-3 flex-fill bg-white m--margin-left-20 m--margin-top-10">
+                    <div>
+                        <button type="submit" class="btn btn-primary border rounded-pill">GET A DEMO</button>
+                    </div> 
+                  </div>
+              </div>
+            </div>        
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+            <br><br><br><br><br><br>
+            <div class="row">
+                <div class="col-4">                    
+                </div>
+                <div class="col-4">   
+                    <p class="h2"><strong><span class="color-orange text-center">Verify OTP</span></strong></p>                 
+                </div>
+                <div class="col-4">                    
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-4">                    
+                </div>
+                <div class="col-4">
+                    <form [formGroup]="otpVerificationForm" role="form" (ngSubmit)="onSubmit()">
+                    <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control input-field" name="otp" formControlName="otp" placeholder="Enter OTP*">                              
+                          <div *ngIf="submitted && f.otp.errors" class="required">
+                            <span *ngIf="f.otp.errors.required">OTP is required</span>                            
+                          </div>   
+                        </div>                        
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary border rounded-pill floatright">Submit</button>
+                    </form>
+                </div>
+                <div class="col-4">                    
+                </div>
+            </div>
+        </main>
+      </div>      
+    </div>
+  </body>

@@ -1,0 +1,11 @@
+image: atlassian/default-image:3
+
+pipelines:
+    branches:
+      develop_2.0:
+        - step:
+           script:
+             - git remote add sync https://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@github.com/Maanavar-2-0/devm20.git
+             - git checkout develop_2.0
+             - git pull    
+             - git push sync develop_2.0

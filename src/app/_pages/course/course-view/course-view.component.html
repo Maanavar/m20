@@ -1,0 +1,48 @@
+<div class="c-body">
+    <main class="c-main">
+        <div class="row m--margin-left-10">
+            <div class="col-2">          
+              <p>
+                <strong class="h5">HOME</strong>
+                <strong class="h5 color-orange m--margin-left-15 m--margin-right-15">></strong>
+                <strong class="h5">COURSES</strong> 
+                <strong class="h5 color-orange m--margin-left-15 m--margin-right-15">></strong>
+                <strong class="h5">{{course.courseId}}</strong>    
+                <strong class="h5 color-orange m--margin-left-15 m--margin-right-15">></strong>
+                <strong class="h5">HOME</strong></p>                      
+            </div>
+            <div class="col-10">            
+            </div>
+          </div>
+          <div class="row m--margin-left-10">
+            <div class="col-2">          
+              <p>
+                <span class="h4 underline text-underline">{{course.courseId}}</span><span class="h4"> - Home</span>
+              </p>
+            </div>
+            <div class="col-10">            
+                <button type="button" class="btn btn-primary border rounded-pill floatright m--margin-right-40" (click)="editCourse()"> <i class="cil-pencil m--margin-right-10"></i> Edit</button>
+            </div>
+          </div>  
+          <div class="row m--margin-left-10">
+            <div class="col-12 text-center">          
+                <img class="course-image" src="{{course.courseImgURL}}" />  
+            </div>
+          </div>  
+          <div class="row m--margin-left-10">
+            <div class="row m--margin-left-10 m--margin-top-15">
+                <p><strong>Welcome to {{ course.courseName }} </strong></p>
+                <p> {{ course.courseAnnouncement }}</p>
+                <p> <strong>Schedule : </strong> <br>
+                    Mon & Wed - 10.30 AM - 11.30 AM <br>
+                    Tue & Thu - 3.00 PM - 4.00 PM <br> </p> 
+                <p><strong>How to navigate here in the course ?</strong></p>
+                <p> {{ course.courseDescription }}</p>
+                <p> <strong>Office Hours : </strong> <br>
+                    Room Number - 105 Seat 11 <br>
+                    Mon & Wed - 10.30 AM - 11.30 AM <br>
+                    Tue & Thu - 3.00 PM - 4.00 PM <br> </p> 
+             </div>              
+          </div> 
+    </main>
+</div>  

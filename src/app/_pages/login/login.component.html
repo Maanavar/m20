@@ -1,0 +1,70 @@
+
+<div class="auth-page">
+  <img src="assets/images/shape.svg" alt="" class="shape">
+  <section class="navbars">
+    <div class="containers">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="mainlogo">
+            <img src="assets/images/Logo.svg" alt="">
+          </div>
+        </div>
+        <!-- <div class="col-md-6" *ngIf="step !=2">
+          <div class="rightside">
+           <a href="" class="notmember">Not a member yet?</a>
+           <a routerLink="/register" class="registerbtn">Register Now</a>
+          </div>
+        </div> -->
+      </div>
+    
+      
+    </div>
+  </section>
+  <div class="fxt-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="loginwrapper">
+          <div *ngIf="step == 1">
+            <img src="assets/images/mlogo.svg" alt="">
+          <h3>Member Login</h3>
+          <p>Access your
+            pocket classroom with
+            <span class="text-blue">Maanavar</span>
+            </p>
+            <div class="fxt-form">
+              <div class="form-group">
+                <label for="email" class="input-label">Email</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter email" required="required">
+             </div>
+             <a (click)="submit()" class="loginbtn btn">Continue to Login</a>
+            </div>
+          </div>
+          <div *ngIf="step == 2">
+            <span (click)="back()" class="arrowleft"><i class="fas fa-arrow-left"></i></span>
+            <img src="assets/images/wisdomlogo.svg" alt="">
+          <h3>Wisdom Academy</h3>
+          <p>Hey, Aniz ! Enter your password to get into your institution</p>
+            <div class="fxt-form">
+              <div class="form-group">
+                <label for="email" class="input-label">Email</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter email" required="required">
+             </div>
+             <div class="form-group">
+              <label for="email" class="input-label">Passwords</label>
+              <input type="password" id="email" class="form-control" name="email" placeholder="Enter password" required="required">
+           </div>
+             <a href="" class="loginbtn btn">Login to your institution</a>
+             <div class="fxt-footer">
+              <p>Forgot your password? <a routerLink="/forgotpassword"> Send me reset link</a> </p>
+              
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights">
+    <p>All Rights Reserved © 2024 Maanavar</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+import { from } from 'rxjs';
+
+export * from './account-setup/account-setup.component';
+export * from './login/login.component';
+export * from './register/register.component';
+export * from './profile/profile.component';
+export * from './home/home.component';
+export * from './otp-verification/otp-verification.component';
+export * from './change-password/change-password.component';
+export * from './course/course-create/course-create.component';
+export * from './course/course-listing/course-listing.component';
+export * from './course/course-view/course-view.component';
+export * from './instructor-account/instructor-account.component';
+export * from './student-account/student-account.component';
+export * from './main-page/main-page.component';
+export * from './student-profile/student-profile.component';
+export * from './instructor-profile/instructor-profile.component';
+export * from './instructor-course-listing/instructor-course-listing.component';
+export * from './student-main-page/student-main-page.component';
+export * from './student-course-list/student-course-list.component';
+export * from './new-subject/new-subject.component';
+export * from './review-subject/review-subject.component';

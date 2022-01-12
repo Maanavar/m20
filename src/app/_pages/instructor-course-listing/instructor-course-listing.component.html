@@ -1,0 +1,542 @@
+<app-main-page></app-main-page>
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>
+              <li class="breadcrumb-item active" aria-current="page">My Subjects</li>
+            </ol>
+          </nav>
+          <div class="page-start">
+            <h4 class="page-title pb-4">My Subjects</h4>
+
+            <div class="d-xl-flex justify-content-between  ">
+                <ul class="nav nav-tabs list-tabs mb-4 mb-xl-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false">Published</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="drafts-tab" data-bs-toggle="tab" data-bs-target="#drafts" type="button" role="tab" aria-controls="drafts" aria-selected="false">Drafts</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">Archived</button>
+                      </li>
+                  </ul>
+
+                  <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                    <li class="bg-white text-grey me-2">
+                        <a href="#" class="filter"><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false"><img src="assets/images/list-icon.svg" class="img-fluid"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><img src="assets/images/grid-icon.svg" class="img-fluid"></button>
+                      </li>
+                    <li  class="nav-item ms-2">
+                        <button type="button"  routerLink="/new-subject" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1">+ <span class="ms-2">New Subject</span></button>
+                    </li>
+                  </ul>
+            </div>
+            <div class="tab-content mt-4" id="myTabContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Artificial Intelligence</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-violet text-white">Published</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-red text-white">Draft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-grey text-white">Archived</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">ECE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-red text-white">Draft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-grey text-white">Archived</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-violet text-white">Published</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="published" role="tabpanel" aria-labelledby="published-tab">2</div>
+                <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">3</div>
+                <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-tab">4</div>
+                <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Subject Name</th>
+                                    <th>Assigned to</th>
+                                    <th>Students</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Artificial Intelligence</th>
+                                    <td>BE - CSE - 2nd Sem - A</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="assets/images/users.svg" class="img-fluid me-2"> 28
+                                        </div>
+                                    </td>
+                                    <td class="text-violet">Published</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Basic Programming</th>
+                                    <td>BE - ECE - 1st Sem - B</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="assets/images/users.svg" class="img-fluid me-2"> 28
+                                        </div>
+                                    </td>
+                                    <td class="text-violet">Published</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle bg-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 mt-lg-4 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Javascript essentials</th>
+                                    <td>BE - CSE - 2nd Sem - A</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="assets/images/users.svg" class="img-fluid me-2"> 28
+                                        </div>
+                                    </td>
+                                    <td class="text-dark-blue">Archived</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle bg-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Advanced Javascript </th>
+                                    <td>BE - CSE - 2nd Sem - A</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="assets/images/users.svg" class="img-fluid me-2"> 28
+                                        </div>
+                                    </td>
+                                    <td class="text-violet">Published</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle bg-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow mt-lg-4 border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>CSS fundamentals and web app </th>
+                                    <td>BE - CSE - 2nd Sem - A</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="assets/images/users.svg" class="img-fluid me-2"> 28
+                                        </div>
+                                    </td>
+                                    <td class="text-red">Draft</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle bg-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 mt-lg-4 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                
+                <div class="tab-pane fade" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Artificial Intelligence</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-violet text-white">Published</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-red text-white">Draft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-grey text-white">Archived</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">ECE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-red text-white">Draft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-grey text-white">Archived</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 mb-4">
+                            <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <div>
+                                        <h6 class="text-dark-blue fw-bold">Computer science and coding</h6>
+                                        <p class="text-grey">BE - CSE  - 2nd Sem - B</p>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="d-flex justify-content-between student-list">
+                                    <ul class="p-0 m-0">
+                                        <li><span>A</span></li>
+                                        <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                        <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                        <li class="ms-2 text-grey">+ 28</li>
+                                    </ul>
+                                    <div class="align-self-center">
+                                        <span class="badge bg-violet text-white">Published</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+    </div>
+</div>

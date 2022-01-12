@@ -1,0 +1,133 @@
+<div class="wrapper-class position-relative">
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3  px-0 side-menubar bg-white h-100">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-0 text-white min-vh-100">
+                <div class="maanavar-logo ps-lg-4">
+                        <a href="/" class="  align-items-center py-4 d-block ps-lg-2 text-lg-start text-white text-decoration-none">
+                            <span class="fs-5 d-none d-sm-inline"><img src="assets/images/maanavar-logo.svg" class="img-fluid"></span>
+                            <span class="fs-5 d-inline d-md-none"><img src="assets/images/logo.svg" class="img-fluid w-50"></span>
+                        </a>
+                    </div>
+                    <ul class="nav nav-pills flex-column sidebar-menu-list py-4 mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <img src="assets/images/home-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>                   
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <img src="assets/images/calendar-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">Calendar</span></a>
+                        </li>
+                        <li class="nav-item " routerLink="/instructor-course-list">
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <img src="assets/images/subject-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">My Subjects</span> </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <img src="assets/images/my-schedule-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">My Schedules</span> </a>
+                        </li>
+                        <li  class="nav-item " >
+                            <a href="#" class="nav-link px-0 align-middle" routerLink="/batches">
+                                <img src="assets/images/student-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">My Students</span> </a>
+                        </li>
+
+                        <li  class="nav-item mt-lg-4">
+                            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start"><img src="assets/images/play-icon.svg" class="img-fluid"><span class="ms-2 d-none d-sm-inline">New Live Class </span></button>
+                        </li>
+                        <li  class="nav-item ">
+                            <button type="button" class="primary-theam-button mt-lg-0  px-lg-4 px-1 text-lg-start"><img src="assets/images/assignment-icon.svg" class="img-fluid"><span class="ms-2 d-none d-sm-inline">New Assignment</span></button>
+                        </li>
+                        <li  class="nav-item ">
+                            <button type="button" class="primary-theam-button mt-lg-0 px-lg-4 px-1 text-lg-start"><img src="assets/images/subtract.svg" class="img-fluid"><span class="ms-2 d-none d-sm-inline">New Course</span></button>
+                        </li>
+                    </ul>
+                    <!-- <div class="menu-content w-100 pt-8 pb-2  pt-5 mt-5 ps-lg-4">
+                        <span class="menu-section ps-2 text-muted  fw-bold fs-8 ls-1">System</span>
+                    </div> -->
+                    <ul class="align-items-sm-start w-100 p-0">
+                        <li class="nav-item ">
+                            <!-- <a href="#" class="nav-link align-middle px-0">
+                                <img src="assets/images/new-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">Whats New <span class="badge bg-red">New</span></span>
+                            </a> -->
+                            <div class="admin-btn d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <img src="assets/images/admin-logo.svg">
+                                    </div>
+                                    <div class="d-none d-sm-inline">
+                                        <h6 class="text-dark-blue mb-0">Admin</h6>
+                                        <span class="text-grey">Switch User</span>
+                                    </div>
+                                </div>
+                                <div class="align-self-center d-none d-sm-inline">
+                                    <img src="assets/images/right-arrow-icon.svg">
+                                </div>
+                            </div>
+                        </li>                   
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <img src="assets/images/setting-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline">Settings</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link px-0 align-middle text-dark-blue">
+                                <img src="assets/images/logout-icon.svg" class="img-fluid"> <span class="ms-2 d-none d-sm-inline ">Logout</span> <span class="float-end d-none d-sm-inline">V.2.0</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col p-0 main-page-content">
+                <nav class="navbar navbar-expand-lg fixed-top main-menu py-3" aria-label="Main navigation">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/wisdom-logo.svg" class="img-fluid">
+                        </a>
+                        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" aria-label="Toggle navigation">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </button>
+                        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                       
+                                <li class="nav-item">
+                                    <form>
+                                        <div class="search-item d-flex align-items-center position-relative">
+                                            <!--begin::Search-->
+                                            <div class="position-relative my-1">                                            
+                                                <input type="text" class="form-control form-control-sm form-control-solid  ps-10" name="Search" value="" placeholder="Search">
+                                            </div>
+                                            <img src="assets/images/search-icon.svg" class="img-fluid">
+                                            <!--end::Search-->                                        
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item">
+                                    <img src="assets/images/info-icon.svg" class="img-fluid">
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn position-relative p-0">
+                                        <img src="assets/images/notification-icon.svg" class="img-fluid">
+                                        <span class="position-absolute top-0 start-80 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                        </span>
+                                    </button>
+                                </li> 
+                                <li class="nav-item">
+                                    <div class="diveder-v"></div>
+                                    <div class="menu-content d-flex align-items-center px-3" routerLink="/student-profile">
+                                        <div >
+                                            <img src="assets/images/user-profile.svg" alt="User" class="user-profile-img me-3">
+                                        </div>
+                                        <p class="mb-0 align-self-center">Aniz Hathif</p>
+                                    </div>
+                                </li>                                 
+                            </ul>                    
+                        </div>
+                    </div>
+                </nav>
+                <!-- <div class="wrapper-inner px-lg-5 px-3 py-4">
+                    <app-student-profile></app-student-profile>
+                </div> -->
+            </div>            
+        </div>        
+    </div>
+</div> 

@@ -1,0 +1,200 @@
+<app-main-page></app-main-page>
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>
+              <li class="breadcrumb-item me-2"><a href="#">My Subjects</a></li>
+              <li class="breadcrumb-item me-2"><a href="#">Artificial Intelligence</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Files & Folders</li>
+            </ol>
+          </nav>
+          <div class="profile-details">
+            <h4 class="page-title pb-4">Artificial Intelligence</h4>
+
+            <div class="subject-tab">
+                <ul class="nav nav-tabs list-tabs mb-4 mb-xl-0 justify-content-center border-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true"><img src="assets/images/file-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false"><img src="assets/images/assignment.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="drafts-tab" data-bs-toggle="tab" data-bs-target="#drafts" type="button" role="tab" aria-controls="drafts" aria-selected="false"><img src="assets/images/people-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false"><img src="assets/images/course-discussion-icon.svg"></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false"><img src="assets/images/other-icon.svg"></button>
+                    </li>
+                  </ul>
+                  <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center" routerLink="/subject-folder"><img src="assets/images/blue-back-arrow.svg" class="img-fluid me-1"> Lectures</h4>
+                            <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                                <li class="text-dark-blue fw-bold mx-3">
+                                    <img src="assets/images/move-icon.svg" class="me-1">Download
+                                  </li>
+                                  <li class="text-dark-blue fw-bold mx-3">
+                                    <img src="assets/images/delete-icon.svg" class="me-1">Delete
+                                  </li>
+                                <li class="bg-white text-grey mx-2 align-self-center">
+                                    <a href="#" class="filter "><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                                </li>
+                                <li  class="nav-item ms-2">
+                                    <button type="button"  routerLink="/new-subject" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1">+ <span class="ms-2">New</span></button>
+                                </li>
+                              </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="position-relative">
+                                                <input id="all" type="checkbox" value="value1">
+                                                  <label for="all"></label>
+                                              </div>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Format</th>
+                                        <th>Size</th>
+                                        <th>Last Modified</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/word-icon.svg" class="img-fluid me-3">Lecture 1
+                                        </th>
+                                        <td>Doc</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                    <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/power-point-icon.svg" class="img-fluid me-3">Lecture 2
+                                        </th>
+                                        <td>Pdf</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                    <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/word-icon.svg" class="img-fluid me-3">Lecture 3
+                                        </th>
+                                        <td>Doc</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                    <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/power-point-icon.svg" class="img-fluid me-3">Lecture 4
+                                        </th>
+                                        <td>Pdf</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                    <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/power-point-icon.svg" class="img-fluid me-3">Lecture 5
+                                        </th>
+                                        <td>Pdf</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                    <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="published" role="tabpanel" aria-labelledby="published-tab">2</div>
+                <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">3</div>
+                <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-tab">4</div>
+                  </div>
+            </div>
+          </div>
+    </div>
+</div>

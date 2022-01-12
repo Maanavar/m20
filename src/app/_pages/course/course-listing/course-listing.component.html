@@ -1,0 +1,77 @@
+<div class="c-body">
+    <main class="c-main">
+      <div class="row m--margin-left-10">
+        <div class="col-2">          
+          <p>
+            <strong class="h5">HOME</strong>
+            <strong class="h5 color-orange m--margin-left-15 m--margin-right-15">></strong>
+            <strong class="h5">COURSES</strong></p>         
+        </div>
+        <div class="col-10">            
+        </div>
+      </div>
+      <div class="row m--margin-left-10">
+        <div class="col-2">          
+          <p>
+            <span class="h4 underline text-underline">Courses</span>
+            <img src="assets/images/addbutton.png" alt="" class="course-addbutton" (click)="createNewCourse()">
+          </p>
+        </div>
+        <div class="col-10">            
+        </div>
+      </div>      
+      <div class="row">
+        <div class="card text-center">
+            <div class="card-header">
+              <div class="row m--margin-top-20">
+                  <div class="col-3 m--margin-left-40">
+                    <input type="text" class="form-control input-field" id="searchText" name="searchText" placeholder="Search" value="{{searchText}}" (keypress)="onSearchTextChange($event)">
+                  </div>
+                  <div class="col-4 m--margin-left-40">
+                    <span class="h4">All</span> &nbsp; &nbsp; &nbsp;
+                    <span class="h4 underline text-underline">Published</span> &nbsp; &nbsp; &nbsp;
+                    <span class="h4">Draft</span> &nbsp; &nbsp; &nbsp;
+                    <span class="h4">Archieved</span> &nbsp; &nbsp; &nbsp;
+                  </div>
+                  <div class="col-4 m--margin-left-30 m--padding-left-300 ">
+                    <strong>Filter</strong> &nbsp; &nbsp; &nbsp; <i class="cil-filter course-filter-icon"></i>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="row m--margin-padding-20" 
+                infinite-scroll
+                [infiniteScrollDistance]="scrollDistance"
+                [infiniteScrollUpDistance]="scrollUpDistance"
+                [infiniteScrollThrottle]="throttle"
+                (scrolled)="onScrollDown()">
+                    <div *ngFor="let course of allCourses" class="col-sm-4" >  
+                        <div class="card mb-3">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!-- <img src="assets/images/favorite.svg.png" alt="" class="course-favorite-icon"> -->
+                                        <i class="cil-heart course-favorite-icon"></i>
+                                    </div>
+                                    <div class="col-6">
+                                        <i class="cil-menu course-duplicate-action-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <img class="course-image" src="{{course.courseImgURL}}" />  
+                                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg> -->
+                                </div>
+                            </div>                            
+                            <div class="card-body">
+                              <p class="card-text"><strong>{{course.courseId}}</strong></p>
+                              <p class="card-text"><strong>{{course.courseName}}</strong></p>
+                              <p class="card-text">{{course.courseAnnouncement}}</p>                                                                                    
+                            </div>
+                        </div>   
+                      </div> 
+                  </div>
+            </div>
+          </div>
+      </div>
+    </main>
+  </div>      
