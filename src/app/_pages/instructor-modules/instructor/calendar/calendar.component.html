@@ -1,0 +1,179 @@
+<div class="main-content">
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="announcementWrapper">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <img src="assets/images/home.svg" alt="Logo">
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="">Calender</a>
+                  </li>
+                
+                </ul>
+                <h3 class="text-dark-blue d-flex align-items-center">
+                  
+                    
+                    Calender
+                    <span class="createremainder" data-bs-toggle="modal" data-bs-target="#announcementModal">
+                        <img src="assets/images/add.svg">
+                    </span>
+                </h3>
+                    <ejs-schedule width='100%' height='550px' >
+                        <e-views>
+                          <!-- <e-view option='TimelineDay'></e-view> -->
+                          <e-view option='Month'></e-view>
+                          <e-view option='Week'></e-view>
+                          <!-- <e-view option='TimelineMonth'></e-view> -->
+                        </e-views>
+                        </ejs-schedule>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="upcomingEventlist">
+                <div class="eventtitle">
+                    <span>October - 26 -2021</span>
+                    <h3>Upcoming Events</h3>
+                    <p>Never miss an event and keep track of your classes.</p>
+                </div>
+               
+                <div class="eventWrap">
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> BE - CSE  - 2nd Sem - A</span>
+                        <h4 class="common-titletwo text-dark-blue">Artifical Intelligence</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                               10:30 AM - 11:30 AM</span>
+                            <div class="cl-start">
+                                <p class="text-red"><img src="assets/images/play.svg" alt="Logo"> Start class</p>
+                                <span><img src="assets/images/file.svg" alt="Logo"> </span>
+                            </div>
+                    </div>
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> Everyone</span>
+                        <h4 class="common-titletwo text-dark-blue">AI Conference</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                                12:30 PM</span>
+                           
+                    </div>
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> Everyone</span>
+                        <h4 class="common-titletwo text-dark-blue">AI Conference</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                                12:30 PM</span>
+                           
+                    </div>
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> Everyone</span>
+                        <h4 class="common-titletwo text-dark-blue">AI Conference</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                                12:30 PM</span>
+                           
+                    </div>
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> Everyone</span>
+                        <h4 class="common-titletwo text-dark-blue">AI Conference</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                                12:30 PM</span>
+                           
+                    </div>
+                    <div class="announcementlist">
+                        <span class="announcementtags text-grey"> <i class="fa fa-circle text-blue" aria-hidden="true"></i> Everyone</span>
+                        <h4 class="common-titletwo text-dark-blue">AI Conference</h4>
+                        <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit. Integer ullamcorper...</p>
+                            <span class="text-dark-blue">
+                                <img src="assets/images/time.svg" alt="Logo"> 
+                                
+                                12:30 PM</span>
+                           
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="modal fade announcementModal" id="announcementModal" tabindex="-1" aria-labelledby="announcementModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="announcementModal">Create Remainder</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="announcementModalWrap pt-0">
+                
+               
+              </div>
+              <div class="announcementModalWrap popupbor">
+                <div class="form-group">
+                    <input name="text" type="text" class="form-control textbox"  placeholder="Type" aria-label="Email Address">     
+                  </div>
+                 
+               
+                
+                <div class="form-group">
+                  <label for="first_field" class="form-label">Date</label>
+                 <div class="select-flex">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Date</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Month</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                 </div>
+                    
+                </div>
+                <div class="form-group">
+                  <label for="first_field" class="form-label">Time</label>
+                  <div class="timepick">
+                    <input type="text" value="19:00" class="form-control" />
+                    <img src="assets/images/clock.svg" alt="Logo">
+                  </div>
+                
+                </div>
+                <div class="form-group">
+                    <label for="first_field" class="form-label">Description</label>
+                    <textarea name="" id=""  class="form-control"></textarea>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-primary">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

@@ -1,0 +1,185 @@
+<body class="c-app">    
+    <div class="c-wrapper">
+      <header class="c-header">
+            <div class="col-12">
+              <div class="d-flex bg-white border-bottom">
+                <div class="p-3 flex-fill bg-white m--margin-left-20 m--margin-topM-5">
+                  <div>
+                    <img src="../../../../../assets/images/logo.png" alt="" class="">
+                  </div> 
+                </div>                
+                <div class="p-3 flex-fill bg-white m--margin-left-20">
+                  <div class="d-flex flex-row-reverse bg-white ">
+                    <div class="p-4 bg-white"><strong>Contact Us</strong></div>
+                    <div class="p-4 bg-white"><strong>Support</strong></div>                    
+                    <div class="p-4 bg-white"><strong>For Instructors</strong></div>
+                    <div class="p-4 bg-white"><strong>For Institutions</strong></div>
+                  </div>    
+                </div>
+                <div class="p-3 flex-fill bg-white m--margin-left-20 m--margin-top-10">
+                    <div>
+                        <button type="submit" class="btn btn-primary border rounded-pill">GET A DEMO</button>
+                    </div> 
+                  </div>
+              </div>
+            </div>        
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+            <div class="row m--margin-top-20">
+                <div class="col-1"></div>
+                <div class="col-10 p-4 border border-light rounded-top rounded-right rounded-bottom rounded-left bg-white">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <p class="h4"><span class="color-orange bold">Set Up Your Account</span></p>
+                          <br> 
+                          <form [formGroup]="accountSetupForm" role="form" #rf="ngForm" novalidate (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col">
+                                  <input type="text" class="form-control input-field" name="firstName" formControlName="firstName" placeholder="First Name*">
+                                  <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.firstName.touched) && !accountSetupForm.value.firstName">(First Name required)</span>
+                                </div>
+                                <div class="col">                                    
+                                    <input type="text" class="form-control input-field" name="middleName" formControlName="middleName" placeholder="Middle Name*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.middleName.touched) && !accountSetupForm.value.middleName">(Middle Name required)</span>
+                                  </div>
+                                <div class="col">              
+                                    <input type="text" class="form-control input-field" name="lastName" formControlName="lastName" placeholder="Last Name*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.lastName.touched) && !accountSetupForm.value.lastName">(Last Name required)</span>              
+                                </div>
+                              </div>
+                              <br>
+                            <div class="row">   
+                                <div class="col">
+                                  <select class="form-control" name="gender" formControlName="gender">
+                                    <option value="" disabled selected> Select Gender</option>
+                                    <option *ngFor="let gend of genders" [ngValue]="gend.value"> {{ gend.label }}</option>
+                                  </select>   
+                                </div>
+                                <div class="col">
+                                  <input type="date" class="form-control input-field" name="dateOfBirth" formControlName="dateOfBirth" placeholder="Date Of Birth*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.dateOfBirth.touched) && !accountSetupForm.value.dateOfBirth">(Date Of Birth required)</span>              
+                                </div>
+                                <div class="col">           
+                                    <input type="text" class="form-control input-field" name="email" formControlName="email" placeholder="Email*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.email.touched) && !accountSetupForm.value.email">(Email required)</span>                               
+                                </div>
+                                <div class="col">             
+                                    <input type="number" class="form-control input-field" name="phoneNumber" formControlName="phoneNumber" placeholder="Phone Number*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.phoneNumber.touched) && !accountSetupForm.value.phoneNumber">(Phone Number required)</span>                                             
+                                </div>
+                            </div>                               
+                              <br>  
+                              <p class="h5">Your Address</p>  
+                              <br>    
+                            <div class="row">
+                                <div class="col">    
+                                    <input type="text" class="form-control input-field" name="addressLine1" formControlName="addressLine1" placeholder="Address Line 1*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.addressLine1.touched) && !accountSetupForm.value.addressLine1">(Address Line 1 required)</span>              
+                                </div>
+                                <div class="col">       
+                                    <input type="text" class="form-control input-field" name="addressLine2" formControlName="addressLine2" placeholder="Address Line 2*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.addressLine2.touched) && !accountSetupForm.value.addressLine2">(Address Line 2 required)</span>                                  
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>  
+                            <div class="row">
+                                <div class="col">  
+                                    <input type="text" class="form-control input-field" name="city" formControlName="city" placeholder="City*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.city.touched) && !accountSetupForm.value.city">(City required)</span>              
+                                </div>
+                                <div class="col">           
+                                    <input type="text" class="form-control input-field" name="district" formControlName="district" placeholder="District*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.district.touched) && !accountSetupForm.value.district">(District required)</span>                               
+                                </div>
+                                <div class="col">      
+                                    <input type="text" class="form-control input-field" name="state" formControlName="state" placeholder="State*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.state.touched) && !accountSetupForm.value.state">(State required)</span>                               
+                                </div>
+                                <div class="col">      
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>  
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control input-field" name="country" formControlName="country" placeholder="Country*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.country.touched) && !accountSetupForm.value.country">(Country required)</span>                                  
+                                </div>
+                                <div class="col">        
+                                    <input type="number" class="form-control input-field" name="postalCode" formControlName="postalCode" placeholder="Postal Code*">
+                                    <span class="required" *ngIf="(rf.submitted || accountSetupForm.controls.postalCode.touched) && !accountSetupForm.value.postalCode">(Postal Code required)</span>                                                       
+                                </div>
+                                <div class="col">                                          
+                                </div>
+                                <div class="col">      
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>  
+                              <p class="h5">Work Details</p>   
+                              <br>  
+                            <div class="row">
+                                <div class="col">  
+                                    <select class="form-control" name="department" formControlName="department">
+                                      <option value="" disabled selected> Select Department </option>
+                                      <option *ngFor="let dept of departments" [ngValue]="dept.value"> {{ dept.label }}</option>
+                                    </select>    
+                                </div>                              
+                                <div class="col">               
+                                    <input type="text" class="form-control input-field" name="institutionName" formControlName="institutionName" placeholder="Institution Name">                
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>  
+                            <div class="row">
+                                <div class="col">                                  
+                                  <input type="date" class="form-control input-field" name="joiningDate" formControlName="joiningDate" placeholder="Joining Date">                                                      
+                                </div>
+                                <div class="col">       
+                                  <input type="text" class="form-control input-field" name="qualification" formControlName="qualification" placeholder="Qualification">     
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>  
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" class="form-control input-field" name="experienceInYears" formControlName="experienceInYears" placeholder="Experience in years">      
+                                </div>
+                                <div class="col">       
+                                  <input type="number" class="form-control input-field" name="experienceInMonths" formControlName="experienceInMonths" placeholder="Experience in months">                    
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>   
+                            <div class="row">
+                                <div class="col">  
+                                    <input type="text" class="form-control input-field" name="designationInCollege" formControlName="designationInCollege" placeholder="Designation in College">                    
+                                </div>
+                                <div class="col">       
+                                  <input type="number" class="form-control input-field" name="collegeID" formControlName="collegeID" placeholder="College ID">                    
+                                </div>
+                                <div class="col">      
+                                </div>
+                            </div>                               
+                              <br>        
+                            <button type="submit" class="btn btn-primary border rounded-pill floatright">Submit To Start Accessing Maanavar</button>
+                            <button type="button" class="btn btn-secondary border rounded-pill floatleft">Cancel</button>
+                            <br>
+                          </form>     
+                        </div>
+                      </div>
+                </div>            
+                <div class="col-1"></div>
+            </div>           
+        </main>
+      </div>      
+    </div>
+  </body>

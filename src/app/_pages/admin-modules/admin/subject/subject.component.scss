@@ -1,0 +1,130 @@
+
+.course-table{
+    table{
+        border-collapse: separate;
+    border-spacing: 0 1em;
+        tr,th,td{
+            border: 0;
+        }
+        thead{
+            tr{
+                th{
+                    font-family: Open Sans !important;
+                    font-style: normal !important;
+                        
+                        font-size: 11px;
+                        line-height: 16px;
+                        color: var(--grey-color);
+                        @media only screen and (max-width: 568px) and (min-width: 320px){
+                            white-space: nowrap;
+                        }   
+                }
+            }
+        }
+        tbody{
+            border-radius: 8px;
+            tr{
+                background: var(--white-color);
+                box-shadow: 6px 10px 20px rgba(64, 83, 163, 0.1);
+                border-radius: 8px;                
+                th{
+                    font-size: 15px;
+                    font-weight: bold !important;
+                    color: var(--dark-blue-color);
+                    padding: 20px;
+                    font-family: 'Open Sans', sans-serif !important;
+                    font-weight:600 ;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    border-bottom-left-radius: 8px; 
+                    border-top-left-radius: 8px; 
+                }
+                td{
+                    color: var(--grey-color);
+                    font-family: Open Sans !important;
+                    font-style: normal !important;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    &:last-child{
+                        border-bottom-right-radius: 8px; 
+                        border-top-right-radius: 8px; 
+                    }
+                }
+                button{
+                    font-family: Open Sans !important;
+                    font-style: normal !important;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 7px 19px;
+                    background: transparent;
+                      
+                        color: var(--red-color);
+                }
+                &:hover{
+                    background: #F6F8FF;
+                }
+            }
+        }
+    }
+    :not(:first-child){
+        border-top: 0;
+    }
+}
+
+@media(max-width:767px){
+    .nav-tabs{
+        &.list-tabs{
+            .nav-link{
+                padding: 0.4rem 0.9rem;
+            }
+        }
+    }
+}
+
+.dropshow{
+    background: #FFFFFF;
+    border: 1px solid #F5F6FA;
+    box-sizing: border-box;
+    // box-shadow: 2px 6px 12px rgb(95 108 175 / 20%);
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    left: -110px;
+    padding: 16px 28px;
+}
+.dropshow a{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 16px;
+
+}
+.dropshow.showmobilesearch{
+    display: block;
+}
+.dropdown-toggle::after{display: none;}
+.dropdown{
+    button{
+        background-color: transparent;
+            border: 0;
+            padding: 0;
+    }
+    .dropdown-menu {
+        min-width: auto;
+        top: 50%;
+        // right: 0 !important;
+        // left: unset !important;
+        li{
+            margin-bottom: 5px;
+            a{
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+    }
+}

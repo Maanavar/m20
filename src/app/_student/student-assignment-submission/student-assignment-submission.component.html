@@ -1,4 +1,4 @@
-<app-main-page></app-main-page>
+
 <div class="wrapper-inner px-lg-5 px-3 py-4">
     <div class="page-section">
         <nav aria-label="breadcrumb">
@@ -13,11 +13,173 @@
             <h4 class="page-title pb-4">Artificial Intelligence</h4>
             <div class="">
                 <ul class="subject-tab nav nav-tabs  mb-4 mb-xl-0 justify-content-center border-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false"><img src="assets/images/assignment.svg"></button>
-                    </li>
+                   
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false"><img src="assets/images/assignment.svg"></button>
+                      </li>
+                     
                   </ul>
                   <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade" id="all" role="tabpanel" aria-labelledby="all-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Files & Folders</h4>
+                            <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                                <li class="text-dark-blue fw-bold mx-3">
+                                  <img src="assets/images/move-icon.svg" class="me-1">Download
+                                </li>
+                                <li class="text-dark-blue fw-bold mx-3">
+                                  <img src="assets/images/delete-icon.svg" class="me-1">Delete
+                                </li>
+                                <li class="bg-white text-grey mx-2 align-self-center">
+                                    <a href="#" class="filter "><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                                </li>
+                                <li  class="nav-item ms-2">
+                                    <button type="button"  routerLink="/new-subject" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1">+ <span class="ms-2">Add New</span></button>
+                                </li>
+                               
+                              </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="position-relative">
+                                                <input id="all" type="checkbox" value="value1">
+                                                  <label for="all"></label>
+                                              </div>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Files</th>
+                                        <th>Size</th>
+                                        <th>Last Modified</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr routerLink="/lectures">
+                                        <th><div class="position-relative">
+                                            <input id="syllabus" type="checkbox" value="value1">
+                                              <label for="syllabus"></label>
+                                          </div>
+                                        </th>
+                                        <th class="rounded-0">
+                                          <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Syllabus
+                                        </th>
+                                        <td>5 Files</td>
+                                        <td>105 MB</td>
+                                        <td>2 days ago</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="assets/images/drop-dots.svg">
+                                                </button>
+                                                <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                  <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                  <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Exam Files
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/folder-icon.svg" class="img-fluid me-3">Lectures
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/word-icon.svg" class="img-fluid me-3">File name lorem ipsum
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th><div class="position-relative">
+                                          <input id="syllabus" type="checkbox" value="value1">
+                                            <label for="syllabus"></label>
+                                        </div>
+                                      </th>
+                                      <th class="rounded-0">
+                                        <img src="assets/images/power-point-icon.svg" class="img-fluid me-3">File name lorem ipsum
+                                      </th>
+                                      <td>5 Files</td>
+                                      <td>105 MB</td>
+                                      <td>2 days ago</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/images/drop-dots.svg">
+                                              </button>
+                                              <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/move-icon.svg" class="me-2">Move</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                    </tr>                                      
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                     <div class="tab-pane fade show active" id="published" role="tabpanel" aria-labelledby="published-tab">
                         <div class="d-xl-flex justify-content-between mb-3">
                             <h4 class="text-blue fw-bold mb-0 align-self-center"><img src="assets/images/blue-back-arrow.svg" class="me-2">Regression Algorithm</h4>
@@ -69,7 +231,7 @@
                                             <div class="form-group bg-white files mb-3">
                                                 <input type="file" class="form-control" multiple="" >
                                                 <div class="file-data text-center">
-                                                    <img src="assets/images/file.svg">
+                                                    <img src="assets/images/fileup.svg">
                                                     <p>Drop your file here, or <span class="text-red">browse</span></p>
                                                     <span>Support: Doc, Pdf, Jpg, Png</span>
                                                 </div>
@@ -192,8 +354,1249 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane fade" id="gradebook" role="tabpanel" aria-labelledby="gradebook-tab">
+                        <div class="d-flex mb-3 grade-title" routerLink="/subject-folder">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Gradebook </h4>
+                            <ul class="p-0 m-0">
+                                <li>Overall grade <span class="text-blue ms-3">67.3%</span></li>
+                            </ul>
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Submission Date</th>
+                                        <th>Mark</th>
+                                        <th></th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Regression Algorithm
+                                        </th>
+                                        <td>N/A</td>
+                                        <td  class="fw-bold text-dark-blue">N/A</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> HTML coding and CSS
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <th >
+                                            <img src="assets/images/assignment-blue.svg" class="img-fluid me-3"> Title of assignment Lorem...
+                                        </th>
+                                        <td>21 March, 2021</td>
+                                        <td class="fw-bold text-dark-blue">84</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                    </tr>            
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">All Students</h4>
+                            
+                        </div>
+                        <div class="table-responsive course-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>No. of Submissions</th>
+                                        <th>Overall Grade</th>
+                                        <th></th>
+                                        <th>Roll No. or UID</th>
+                                        <th>Email</th>
+                                        <th>Date of Birth</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student1.png" class="img-fluid me-3"> Wilson Kilbert
+                                        </th>
+                                        <td>04 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">68 %</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student2.png" class="img-fluid me-3"> Peter Parker
+                                        </th>
+                                        <td>05 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">95%</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>  
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student3.png" class="img-fluid me-3"> Deepan Remijious
+                                        </th>
+                                        <td>04 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">60%</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>   
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student4.png" class="img-fluid me-3"> Ruban Karthik
+                                        </th>
+                                        <td>05 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">92%</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student5.png" class="img-fluid me-3"> Jai Surya
+                                        </th>
+                                        <td>05 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">74%</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>
+                                    <tr routerLink="/student-detail">
+                                        <th >
+                                          <img src="assets/images/student6.png" class="img-fluid me-3"> Deva Rajan
+                                        </th>
+                                        <td>05 Assignments</td>
+                                        <td class="text-dark-blue fw-bold">53%</td>
+                                        <td>
+                                            <button type="button"  class="button-light-red mt-lg-0 ">View Gradebook</button>
+                                        </td>
+                                        <td>RL13332</td>
+                                        <td>wilsonkilbert@gmail.com</td>
+                                        <td>21 March, 1996</td>
+                                    </tr>                      
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Discussion Forum</h4>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="discussion-search bg-white rounded-5 d-flex">
+                                    <div class="align-self-center">
+                                        <img src="assets/images/user-profile.svg" class="me-2 rounded-circle">
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Add your questions here...">
+                                </div>
+                                <div class="d-xl-flex justify-content-between my-3 ">
+                                    <ul class="posts p-0 m-0 align-self-center">
+                                        <li class="active">All posts</li>
+                                        <li>Your posts</li>
+                                    </ul>
+                                    <form class="mt-0">
+                                    <div class="form-group">
+                                        <select class="form-select post-select bg-white border-0 h-auto" aria-label="Default select example">
+                                            <option selected>Popular posts</option>
+                                        </select>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="discussion-card mb-3">
+                                    <div class="card-header d-flex justify-content-between p-0 border-0">
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <img src="assets/images/student7.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                <span>BE - CSE  - 2nd Sem - A</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown align-self-center">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                    <div class="card-footer border-0 pt-3 p-0 border-0">
+                                        <ul class="p-0">
+                                            <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                            <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                        </ul>
+                                        <div class="comment-field rounded-5 d-flex">
+                                            <div class="align-self-center">
+                                                <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                            </div>
+                                            <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discussion-card mb-3">
+                                    <div class="card-header d-flex justify-content-between p-0 border-0">
+                                        <div class="d-flex">
+                                            <div class="me-3">
+                                                <img src="assets/images/student7.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                <span>BE - CSE  - 2nd Sem - A</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown align-self-center">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div class="card-body px-0">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                    <div class="card-footer border-0 pt-3 p-0 border-0">
+                                        <ul class="p-0">
+                                            <li><img src="assets/images/filled-heart-icon.svg" class="me-2">You and 6 others like this</li>
+                                            <li><img src="assets/images/comment.svg" class="me-2">5 comments</li>
+                                        </ul>
+                                        <div class="comment-field rounded-5 d-flex mb-3">
+                                            <div class="align-self-center">
+                                                <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                            </div>
+                                            <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                        </div>
+                                        <div class="discussion-card comment-replay mb-3">
+                                            <div class="card-header d-flex justify-content-between p-0 border-0">
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <img src="assets/images/student7.png" class="rounded-circle">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                        <span>BE - CSE  - 2nd Sem - A</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 border-0">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                            </div>
+                                            <div class="card-footer border-0  p-0 border-0">
+                                                <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                    <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                    <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="discussion-card comment-replay mb-3">
+                                            <div class="card-header d-flex justify-content-between p-0 border-0">
+                                                <div class="d-flex">
+                                                    <div class="me-3">
+                                                        <img src="assets/images/student7.png" class="rounded-circle">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                        <span>BE - CSE  - 2nd Sem - A</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body px-0 border-0">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                            </div>
+                                            <div class="card-footer border-0  p-0 border-0">
+                                                <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                    <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                    <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="load-more"><p class="fw-bold text-center text-grey mt-4 mb-1">Load more comments</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card border-0 mb-4 card-shadow rounded-5 py-3 px-2 description-card">
+                                    <div class="card-header border-0 bg-0 pb-0 justify-content-between d-flex">
+                                        <h6 class="fw-bold text-dark-blue mb-0">Description</h6>
+                                        <a href="" class="fw-bold text-dark-blue" data-bs-toggle="modal" data-bs-target="#edit-subject-description"><img src="assets/images/edit.svg"> Edit</a>
+                                    </div>
+                                    <div class="card-body pb-2">
+                                        <p class="text-grey mb-0">Welcome to the discussion forums! Ask questions, debate ideas, and find classmates who share your goals. Browse through the posts, questions and comments posted for this class.</p>
+                                    </div>
+                                </div>
+                                <div class="moderators mt-2">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="pe-3">
+                                            <h6 class="fw-bold text-dark-blue mb-2">Moderators</h6>
+                                            <p class="text-grey">Modurators can delete discussion posts and comments of students</p>
+                                        </div>
+                                        <a href="" class="fw-bold text-dark-blue w-25 text-decoration-none" data-bs-toggle="modal" data-bs-target="#add-modurator">+ Add</a>
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student2.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Peter Parker</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student3.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Deepan Remijious</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student4.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Ruban Karthik</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2">
+                                                <img src="assets/images/student5.png" class="rounded-circle">
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">Jai Surya</h6>
+                                                <span>102801</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/delete-filled.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold mb-0 align-self-center">Subject Overview</h4>   
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-7">  
+                                <div class="profile-card card-shadow bg-white p-0 mb-3 review-block p-4">
+                                    <div class="d-flex justify-content-between card-title p-2">
+                                        <h4 class="text-dark-blue fw-bold mb-0 align-self-center">Description</h4>
+                                        <div class="text-dark-blue fw-bold"  data-bs-toggle="modal" data-bs-target="#edit-subject-description"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <p class="text-dark-blue mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    </div>
+                                </div>
+                                <div class="profile-card card-shadow bg-white p-0 mb-3 review-block p-4">
+                                    <div class="d-flex justify-content-between  card-title p-2">
+                                        <h4 class="text-dark-blue fw-bold mb-0">Syllabus</h4>
+                                        <div class="text-dark-blue fw-bold" data-bs-toggle="modal" data-bs-target="#edit-subject-syllabus"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <p class="text-dark-blue mb-0">The object of this course is to teach students the general concepts of relational databases and how to design a database that is anomaly free. Students will learn to design, create, populate, and query a database by working with the Oracle ™ database engine and the SQL language. Students will also learn basic database administration skills such as creating users, granting/revoking privileges individually or collectively to several users through the use of roles.</p>
+                                        <div class="mt-4">
+                                            <p class="fw-bold text-dark-blue">The main objectives of this course are:</p>
+                                            <ul class="px-4 m-0">
+                                                <li>To emphasize the features of a Relational Database, in particular, the most widely used model, the relational model, and the use of the Oracle ™. Know the basic components of a relational database management system (RDBMS) and how these parts interact during the normal activities of a database engine.</li>
+                                                <li>To construct a conceptual model (E/R diagram) and a physical model (Relational Design) from a general data description that runs in an Oracle ™ engine. Create and populate the database and impose the necessary constraints to satisfy data integrity and operational requirements.</li>
+                                                <li>To normalize a database from 1NF to BCNF and the necessity of this process to avoid data anomalies by identifying partial and transitive functional dependencies by the correct application of Armstrong’s inference axioms.</li>
+                                                <li>To write queries in SQL that implement the theoretical relational database operators such as selection, projection, joins. Learn how to impose and enforce constraints on the data to satisfy the requirements of some of the normal forms.</li>
+                                                <li>To write queries in SQL that uses features such as group function (AVG, MIN, MAX, COUNT), individual functions (arithmetic functions, character, conversion functions), processing of date and time information using functions such as TO_DATE, SYSDATE pseudo columns.</li>
+                                                <li>To write basic reports using the BREAK and COMPUTE commands of SQL Plus™.</li>
+                                                <li>To write complex queries (subqueries, correlated queries, update tables, inserting/deleting rows from tables using subqueries) and hiding data through the use of Views.</li>
+                                                <li>To be able to accomplish basic administrative tasks such as create/delete users, grant/revoke privileges to users individually or through roles.</li>
+                                                <li>Managing a successful semester-long project from initial description through design, creation, and implementation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-5">
+                                <div class="cover-change position-relative pb-3">
+                                    <img src="assets/images/cover-change.png" class="img-fluid">
+                                    <p><img src="assets/images/white-pen.png" class="me-2"> Change Cover</p>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <div class="d-flex justify-content-between ">
+                                        <h6 class="text-dark-blue fw-bold mb-4">General Schedules</h6>
+                                        <div class="text-dark-blue fw-bold"  data-bs-toggle="modal" data-bs-target="#edit-schedule"><img src="assets/images/edit.svg"> Edit</div>
+                                    </div>
+                                    <ul class="nav nav-tabs general-schedule mb-3 mb-xl-0 justify-content-between" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button" role="tab" aria-controls="mon" aria-selected="true">Mo</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button" role="tab" aria-controls="tue" aria-selected="false">Tu</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button" role="tab" aria-controls="wed" aria-selected="false">We</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab" aria-controls="thu" aria-selected="false">Th</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab" aria-controls="fri" aria-selected="false">Fr</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab" aria-controls="sat" aria-selected="false">Sa</button>
+                                        </li>                                
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab" aria-controls="sun" aria-selected="false">Su</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content mt-3" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+                                            <div class="shedule bg-white d-lg-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-lg-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>                                
+                                        </div>
+                                        <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="thu-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>                
+                                        <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">6
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                        <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="sun-tab">
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>First Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="shedule bg-white d-flex  mb-3">
+                                                <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                                                <div class="">
+                                                    <div class="period align-self-center">
+                                                        <p>Third Period</p>
+                                                    </div>
+                                                    <div class="time align-self-center">
+                                                        <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                                    </div>
+                                                </div>                                    
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <h6 class="text-dark-blue fw-bold mb-2">Subject Details</h6>
+                                    <div class="course-card master-card card-shadow bg-white p-3 h-100">
+                                        <div class="align-self-center mb-2">
+                                            <span class="badge bg-red text-white">SBJ1516516</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="text-dark-blue fw-bold">Artificial Intelligence</h6>
+                                                <ul class="text-grey m-0 p-0 subject-list"><li>Core </li><li>Theoritical</li></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-blogs my-4">
+                                    <h6 class="text-dark-blue fw-bold mb-2">Assigned to </h6>
+                                    <div class="course-card master-card card-shadow bg-white p-4 h-100">
+                                        <div class="align-self-center mb-2">
+                                            <span class="badge bg-red text-white">Sem II - A</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <h6 class="text-dark-blue fw-bold">BE - Computer Science</h6>
+                                                <p class="text-grey">Dept. of Computer Science</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between student-list">
+                                            <ul class="p-0 m-0">
+                                                <li><span>A</span></li>
+                                                <li><img src="assets/images/s1.png" class="img-fluid"></li>
+                                                <li><img src="assets/images/s2.png" class="img-fluid"></li>
+                                                <li class="ms-2 text-grey">+ 28</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
             </div>
           </div>
     </div>
 </div>
+<div class="modal fade" id="edit-subject-description" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Edit Subject Description</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <form>                
+                <div class="form-group mb-3">
+                    <label>Description</label>
+                    <textarea rows="10" placeholder="" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor ipsum aenean diam eleifend id pulvinar pretium, vel tempus. Nullam vehicula massa vitae eu. Gravida vitae elit eget in adipiscing. Convallis faucibus amet in magna nulla tellus vel in quis. Ridiculus amet vel imperdiet risus arcu turpis. Cursus arcu vitae porta in semper nibh tortor. A fames curabitur pharetra varius quis sagittis commodo. Nec faucibus commodo quis fusce. </textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Create</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="edit-subject-syllabus" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Edit Subject Syllabus</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                
+                <div class="form-group mb-3">
+                    <label>Description</label>
+                    <textarea rows="10" placeholder="" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor ipsum aenean diam eleifend id pulvinar pretium, vel tempus. Nullam vehicula massa vitae eu. Gravida vitae elit eget in adipiscing. Convallis faucibus amet in magna nulla tellus vel in quis. Ridiculus amet vel imperdiet risus arcu turpis. Cursus arcu vitae porta in semper nibh tortor. A fames curabitur pharetra varius quis sagittis commodo. Nec faucibus commodo quis fusce. </textarea>
+                </div>
+                <div class="or">(OR)</div>
+                <div class="form-group mb-3">
+                    <label>Syllabus</label>
+                    <div class="form-group files">
+                        <input type="file" class="form-control" multiple="" >
+                        <div class="file-data text-center">
+                            <img src="assets/images/fileup.svg">
+                            <p>Drop your file here, or <span class="text-red">browse</span></p>
+                            <span>Support: Doc, Pdf, Jpg, Png</span>
+                        </div>
+                      </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Create</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="edit-schedule" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Edit Schedule</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <form>                
+                <div class="form-group mb-3">
+                    <label>Course</label>
+                    <input type="text" value="Computer science and coding" class="form-control" placeholder="" readonly>
+                    <!-- <select aria-label="Default select example" class="form-select" readonly>
+                        <option value="0">Computer science and coding</option>
+                        <option value="1">EC</option>
+                    </select> -->
+                </div>
+                <ul class="nav nav-tabs general-schedule my-4 justify-content-between" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="mo-tab" data-bs-toggle="tab" data-bs-target="#mo" type="button" role="tab" aria-controls="mo" aria-selected="true">Mo</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tu-tab" data-bs-toggle="tab" data-bs-target="#tu" type="button" role="tab" aria-controls="tu" aria-selected="false">Tu</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="we-tab" data-bs-toggle="tab" data-bs-target="#we" type="button" role="tab" aria-controls="we" aria-selected="false">We</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="th-tab" data-bs-toggle="tab" data-bs-target="#th" type="button" role="tab" aria-controls="th" aria-selected="false">Th</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fr-tab" data-bs-toggle="tab" data-bs-target="#fr" type="button" role="tab" aria-controls="fr" aria-selected="false">Fr</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sa-tab" data-bs-toggle="tab" data-bs-target="#sa" type="button" role="tab" aria-controls="sa" aria-selected="false">Sa</button>
+                    </li>                                
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="su-tab" data-bs-toggle="tab" data-bs-target="#su" type="button" role="tab" aria-controls="su" aria-selected="false">Su</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="mo" role="tabpanel" aria-labelledby="mo-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-3" name="radio" type="radio" >
+                                <label for="radio-3" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-4" name="radio" type="radio" >
+                                <label for="radio-4" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                
+                    </div>
+                    <div class="tab-pane fade" id="tu" role="tabpanel" aria-labelledby="tu-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                  
+                    </div>
+                    <div class="tab-pane fade" id="we" role="tabpanel" aria-labelledby="we-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                
+                    </div>
+                    <div class="tab-pane fade" id="th" role="tabpanel" aria-labelledby="th-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                
+                    </div>
+                    <div class="tab-pane fade" id="fr" role="tabpanel" aria-labelledby="fr-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                
+                    </div>                
+                    <div class="tab-pane fade" id="sa" role="tabpanel" aria-labelledby="sa-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                  
+                    </div>
+                    <div class="tab-pane fade" id="su" role="tabpanel" aria-labelledby="su-tab">
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">1</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>First Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">3</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Third Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div> 
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-1" name="radio" type="radio" >
+                                <label for="radio-1" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">5</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Fifth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>
+                        <div class="shedule bg-white d-lg-flex  mb-3 card-shadow">
+                            <div class="radio">
+                                <input id="radio-2" name="radio" type="radio" >
+                                <label for="radio-2" class="radio-label"></label>
+                              </div>
+                            <div class="shedule-num bg-blue text-white fw-bold">6</div>
+                            <div class="">
+                                <div class="period align-self-center">
+                                    <p>Sixth Period</p>
+                                </div>
+                                <div class="time align-self-center">
+                                    <p>09:00 AM<span class="mx-2">to</span>09:45 AM</p>
+                                </div>
+                            </div>                                    
+                        </div>                                
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Create</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="add-modurator" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Add Modurators</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group mb-3">
+                   <input type="text" class="form-control" placeholder="Type student name or UID">   
+                </div>       
+                <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-3">
+                    <div class="d-flex py-1">
+                        <div class="me-2">
+                            <img src="assets/images/student2.png" class="rounded-circle">
+                        </div>
+                        <div>
+                            <h6 class="text-dark-blue mb-0">Peter Parker</h6>
+                            <span>102801</span>
+                        </div>
+                    </div>
+                    <img src="assets/images/delete-filled.svg">
+                </div>         
+            </form>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Add</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>

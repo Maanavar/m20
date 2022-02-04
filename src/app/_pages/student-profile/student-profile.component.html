@@ -1,4 +1,3 @@
-<app-student-main-page></app-student-main-page>
 <div class="wrapper-inner px-lg-5 px-3 py-4">
   <div class="page-section">
       <nav aria-label="breadcrumb">
@@ -19,59 +18,66 @@
                         <span class="text-blue mt-2"><img src="assets/images/pen-icon.png" class="img-fluid me-2" alt="">Change</span>
                       </div>
                     </div>
-                    <div class="col-lg-8 profile-text align-self-center mt-lg-0 mt-4">
+                    <!-- <div class="col-lg-8 profile-text align-self-center mt-lg-0 mt-4">
                       <h5 class="text-dark-blue fw-bold">Kevin Smith</h5>
                       <span class="text-blue my-2 d-block">102801</span>
                       <p>BE - CSE - 2nd Sem - A</p>
                       <p>Dept of Computer Science</p>
                     </div>
+                  </div> -->
+                  <div class="col-lg-8 profile-text align-self-center mt-lg-0 mt-4">
+                    <h5 class="text-dark-blue fw-bold">{{studentProfileViewModel.user.firstName}}   {{studentProfileViewModel.user.lastName}}</h5>
+                    <span class="text-blue my-2 d-block">{{studentProfileViewModel.userStudent.rollNo}}</span>
+                    <p>BE - CSE - 2nd Sem - A</p>
+                    <p>Dept of Computer Science</p>
                   </div>
-              </div>
-              <div class="nav flex-column nav-pills profile-tab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <button class="nav-link active mb-2 card-shadow" id="v-pills-basic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic" aria-selected="true">Basic Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
-                <button class="nav-link mb-2 card-shadow" id="v-pills-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-address" type="button" role="tab" aria-controls="v-pills-address" aria-selected="false">Address Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
-                <button class="nav-link mb-2 card-shadow" id="v-pills-guardian-tab" data-bs-toggle="pill" data-bs-target="#v-pills-guardian" type="button" role="tab" aria-controls="v-pills-guardian" aria-selected="false">Guardian Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
-                <button class="nav-link mb-2 card-shadow" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">Education Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
-              </div>
+                </div>
             </div>
-            <div class="col-md-7">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
-                  <div class="profile-info">
-                    <div class="profile-title card-shadow d-flex align-items-stretch justify-content-between flex-lg-grow-1 mb-2">
-                      <p class="m-0 text-blue">Basic Information</p>
-                      <div class=""><span class="text-dark-blue mt-2"><img src="assets/images/black-pen.png" class="img-fluid me-2" alt="">Edit</span></div>
-                    </div>
-                    <div class="profile-info-card card-shadow bg-white">
-                      <div class="table-responsive">
-                      <table class="table mb-0">
-                        <tr>
-                          <th>Name</th>
-                          <td>:</td>
-                          <td>Kevin Smith</td>
-                        </tr>
-                        <tr>
-                          <th>Email</th>
-                          <td>:</td>
-                          <td>kevinsmith@gmail.com</td>
-                        </tr>
-                        <tr>
-                          <th>Mobile</th>
-                          <td>:</td>
-                          <td>+91 9876543210</td>
-                        </tr>
-                        <tr>
-                          <th>DOB</th>
-                          <td>:</td>
-                          <td>March 21, 1996</td>
-                        </tr>
-                        <tr>
-                          <th>Gender</th>
-                          <td>:</td>
-                          <td>Male</td>
-                        </tr>
-                      </table>
-                      </div>
+            <div class="nav flex-column nav-pills profile-tab" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active mb-2 card-shadow" id="v-pills-basic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-basic" type="button" role="tab" aria-controls="v-pills-basic" aria-selected="true">Basic Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
+              <button class="nav-link mb-2 card-shadow" id="v-pills-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-address" type="button" role="tab" aria-controls="v-pills-address" aria-selected="false">Address Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
+              <button class="nav-link mb-2 card-shadow" id="v-pills-guardian-tab" data-bs-toggle="pill" data-bs-target="#v-pills-guardian" type="button" role="tab" aria-controls="v-pills-guardian" aria-selected="false">Guardian Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
+              <button class="nav-link mb-2 card-shadow" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">Education Information<img src="assets/images/grey-long-arrow.png" class="img-fluid float-end my-1"></button>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
+                <div class="profile-info">
+                  <div class="profile-title card-shadow d-flex align-items-stretch justify-content-between flex-lg-grow-1 mb-2">
+                    <p class="m-0 text-blue">Basic Information</p>
+                    <div class=""><span class="text-dark-blue mt-2"><img src="assets/images/black-pen.png" class="img-fluid me-2" alt="">Edit</span></div>
+                  </div>
+                  <div class="profile-info-card card-shadow bg-white">
+                    <div class="table-responsive">
+                    <table class="table mb-0">
+                      <tr>
+                        <th>Name</th>
+                        <td>:</td>
+                        <td>{{studentProfileViewModel.user.firstName}}   {{studentProfileViewModel.user.lastName}}</td>
+                      </tr>
+                      <tr>
+                        <th>Email</th>
+                        <td>:</td>
+                        <td>{{studentProfileViewModel.user.email}}</td>
+                      </tr>
+                      <tr>
+                        <th>Mobile</th>
+                        <td>:</td>
+                        <td>+91 9876543210</td>
+                      </tr>
+                      <tr>
+                        <th>DOB</th>
+                        <td>:</td>
+                        <td>{{studentProfileViewModel.user.dateOfBirth}}</td>
+                      </tr>
+                      <tr>
+                        <th>Gender</th>
+                        <td>:</td>
+                        <td>{{studentProfileViewModel.user.genderId}}</td>
+                      </tr>
+                    </table>
+                  </div>
                     </div>
                   </div>
                 </div>

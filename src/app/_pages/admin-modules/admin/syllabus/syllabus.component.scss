@@ -1,0 +1,32 @@
+table{
+    tr,th,td{
+        border: 0;
+    }
+    thead{
+        tr{
+            th{
+                font-style: normal !important;
+                font-family: 'Open Sans', sans-serif !important;
+                padding: 10px 20px 0px;
+                &:first-child{
+                    padding: 10px 35px 0px;                    
+                }
+            }
+        }
+    }
+    tbody{
+        tr{             
+            th{
+                font-family: 'Open Sans', sans-serif !important;
+                &:first-child{
+                    padding: 20px 35px;
+                    width: 450px;
+                }
+            }
+            td{               
+                font-family: 'Open Sans', sans-serif !important;  
+                padding: 20px ;
+            }
+        }
+    }
+}

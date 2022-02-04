@@ -1,0 +1,19 @@
+@media only screen and (max-width: 568px) and (min-width: 320px){
+    .announcementtabs ul{
+        display: inline-flex;
+    }
+    .announcementtabs{
+        display: flex;
+    align-items: center;
+    }
+    .announcementtabs ul{
+        margin: 0;
+    }
+}
+
+@media (max-width:991px){
+    .announcemengridimg {
+        display: flex;
+        justify-content: space-between;
+    }
+  }

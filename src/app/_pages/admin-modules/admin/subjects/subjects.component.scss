@@ -1,0 +1,113 @@
+table{
+    tr,th,td{
+        border: 0;
+    }
+    thead{
+        tr{
+            th{
+                font-style: normal !important;
+                font-family: 'Open Sans', sans-serif !important;
+                padding: 10px 20px 0px;
+                &:first-child{
+                    padding: 10px 35px 0px;                    
+                }
+            }
+        }
+    }
+    tbody{
+        tr{             
+            th{
+                font-family: 'Open Sans', sans-serif !important;
+                &:first-child{
+                    padding: 20px 35px;
+                    width: 450px;
+                }
+            }
+            td{               
+                font-family: 'Open Sans', sans-serif !important;  
+                padding: 20px ;
+            }
+        }
+    }
+}
+.dropdown-toggle::after{display: none;}
+.dropdown{
+    button{
+        background-color: transparent;
+            border: 0;
+            padding: 0;
+    }
+    .dropdown-menu {
+        min-width: auto;
+        top: 50%;
+        // right: 0 !important;
+        // left: unset !important;
+        li{
+            margin-bottom: 5px;
+            a{
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.modal-content{
+    border: 0;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 4px rgba(141, 151, 202, 0.06);
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    .modal-header{
+        background: #FAFAFA;
+        border-radius: 10px 10px 0px 0px;
+        border: 0;
+        text-align: center;
+        display: initial;
+        padding: 0.7rem 1rem;
+        h5{
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--dark-blue-color);
+            margin-bottom: 0;
+        }
+        .btn-close{
+            background: none;
+            opacity: 1;
+            position: absolute;
+            top: 15px;
+            right: 35px
+        }
+    }
+    .modal-body{
+        padding: 1rem 3rem;
+        h4{
+            color: #202020;
+            font-weight: 600;
+            border-bottom: 1px solid #3E4D97;
+            padding-bottom: 0.7rem;
+        }
+        form{
+            margin-top: 1.2rem;
+        }
+    }
+    .modal-footer{
+        .cancel{
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+.subject-code{
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: #fafafa;
+    padding: 0.5rem 1.5rem;
+    p{
+        color: #404040;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}

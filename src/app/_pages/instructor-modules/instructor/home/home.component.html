@@ -1,0 +1,551 @@
+    <div class="main-content">
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+                <div class="classList">
+                    <div class="classtitle">
+                        <h4 class="text-dark-blue">Today’s Classes</h4>
+                        <span class="text-grey">See All</span>
+                    </div>
+                    <swiper  [loop]="false" [breakpoints]="breakpoints"  [spaceBetween]="15" [autoHeight]="true" [allowTouchMove]="false"
+                    [autoplay]="false" [pagination]="false" [navigation]="{ prevEl: '.swiper-navigation-prev', nextEl: '.swiper-navigation-next' }" class="swiper" (swiper)="setControlledSwiper($event)" [scrollbar]="{ draggable: true }">
+                    <ng-template data-swiper-autoplay="6000" swiperSlide *ngFor="let details of todayclass">
+                        <div class="class-list-wrapper">
+                            <h3 class="cl-title text-dark-blue">{{details.title}}</h3>
+                            <p class="cl-group text-grey">{{details.section}}</p>
+                            <div class="cl-time">
+                                <p class="text-dark-blue"><span>  <img src="assets/images/calendar.svg" alt="Logo"> {{details.date}}</span></p>
+                                <p class="text-dark-blue"><span><img src="assets/images/time.svg" alt="Logo">{{details.time}}</span></p>
+                            </div>
+                            <div class="cl-start">
+                                <p class="text-red"><img src="assets/images/play.svg" alt="Logo"> Start class</p>
+                                <span><img src="assets/images/file.svg" alt="Logo"> </span>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <!-- <ng-template data-swiper-autoplay="6000" swiperSlide>
+                        <div class="class-list-wrapper">
+                            <h3 class="cl-title text-dark-blue">Artificial Intelligence</h3>
+                            <p class="cl-group text-grey">BE - CSE  - 2nd Sem - A</p>
+                            <div class="cl-time">
+                                <p class="text-dark-blue"><span>  <img src="assets/images/calendar.svg" alt="Logo"> 26 Oct 2021</span></p>
+                                <p class="text-dark-blue"><span><img src="assets/images/time.svg" alt="Logo">10:30 AM - 11:30 AM</span></p>
+                            </div>
+                            <div class="cl-start">
+                                <p class="text-red"><img src="assets/images/play.svg" alt="Logo"> Start class</p>
+                                <span><img src="assets/images/file.svg" alt="Logo"> </span>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template data-swiper-autoplay="6000" swiperSlide>
+                        <div class="class-list-wrapper">
+                            <h3 class="cl-title text-dark-blue">Artificial Intelligence</h3>
+                            <p class="cl-group text-grey">BE - CSE  - 2nd Sem - A</p>
+                            <div class="cl-time">
+                                <p class="text-dark-blue"><span>  <img src="assets/images/calendar.svg" alt="Logo"> 26 Oct 2021</span></p>
+                                <p class="text-dark-blue"><span><img src="assets/images/time.svg" alt="Logo">10:30 AM - 11:30 AM</span></p>
+                            </div>
+                            <div class="cl-start">
+                                <p class="text-red"><img src="assets/images/play.svg" alt="Logo"> Start class</p>
+                                <span><img src="assets/images/file.svg" alt="Logo"> </span>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template data-swiper-autoplay="6000" swiperSlide>
+                        <div class="class-list-wrapper">
+                            <h3 class="cl-title text-dark-blue">Artificial Intelligence</h3>
+                            <p class="cl-group text-grey">BE - CSE  - 2nd Sem - A</p>
+                            <div class="cl-time">
+                                <p class="text-dark-blue"><span>  <img src="assets/images/calendar.svg" alt="Logo"> 26 Oct 2021</span></p>
+                                <p class="text-dark-blue"><span><img src="assets/images/time.svg" alt="Logo">10:30 AM - 11:30 AM</span></p>
+                            </div>
+                            <div class="cl-start">
+                                <p class="text-red"><img src="assets/images/play.svg" alt="Logo"> Start class</p>
+                                <span><img src="assets/images/file.svg" alt="Logo"> </span>
+                            </div>
+                        </div>
+                    </ng-template> -->
+                  </swiper>
+                 <div *ngIf="todayclass.length > 3" class="slidearrow">
+                    <button type="button" class="swiper-navigation-prev text-dark-blue"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button type="button" class="swiper-navigation-next text-dark-blue"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                 </div>
+                
+                </div>
+                <div class="d-xl-flex justify-content-between mb-3 mt-5">
+                    <h4 class="text-dark-blue fw-bold mb-0 align-self-center">Discussion</h4>                           
+                </div>
+                <div class="">
+                    <div class="discussion-search bg-white rounded-5 d-flex">
+                        <div class="align-self-center">
+                            <img src="assets/images/user-profile.svg" class="me-2 rounded-circle">
+                        </div>
+                        <input type="text" class="form-control border-0" placeholder="Add your questions here...">
+                    </div>
+                    <div class="d-xl-flex justify-content-between my-3 ">
+                        <!-- <ul class="posts p-0 m-0 align-self-center">
+                            <li class="active">All posts</li>
+                            <li>Your posts</li>
+                        </ul> -->
+                        <ul class="posts nav nav-tabs mb-4 mb-xl-0 justify-content-center border-0 align-self-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All posts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="published-tab" data-bs-toggle="tab" data-bs-target="#published" type="button" role="tab" aria-controls="published" aria-selected="false">Your posts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="gradebook-tab" data-bs-toggle="tab" data-bs-target="#gradebook" type="button" role="tab" aria-controls="gradebook" aria-selected="false">BE - CSE  - 2nd Sem - A</button>
+                              </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="drafts-tab" data-bs-toggle="tab" data-bs-target="#drafts" type="button" role="tab" aria-controls="drafts" aria-selected="false">BE - CSE  - 2nd Sem - B</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="archived-tab" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">BE - ECE - 1st Sem - A</button>
+                            </li>
+                          </ul>
+                        <form>
+                        <div class="form-group">
+                            <select class="form-select post-select bg-white border-0 h-auto" aria-label="Default select example">
+                                <option selected>Popular posts</option>
+                            </select>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="tab-content mt-4" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/filled-heart-icon.svg" class="me-2">You and 6 others like this</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">5 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex mb-3">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                    <div class="discussion-card comment-replay mb-3">
+                                        <div class="card-header d-flex justify-content-between p-0 border-0">
+                                            <div class="d-flex">
+                                                <div class="me-3">
+                                                    <img src="assets/images/student7.png" class="rounded-circle">
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                    <span>BE - CSE  - 2nd Sem - A</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 border-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                        </div>
+                                        <div class="card-footer border-0  p-0 border-0">
+                                            <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="discussion-card comment-replay mb-3">
+                                        <div class="card-header d-flex justify-content-between p-0 border-0">
+                                            <div class="d-flex">
+                                                <div class="me-3">
+                                                    <img src="assets/images/student7.png" class="rounded-circle">
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                                    <span>BE - CSE  - 2nd Sem - A</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body px-0 border-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna idlacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magn auncblan dit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus </p>
+                                        </div>
+                                        <div class="card-footer border-0  p-0 border-0">
+                                            <ul class="p-0 mb-0 d-flex justify-content-between">
+                                                <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                                <li class="text-dark-blue fw-bold"><img src="assets/images/delete-icon.svg" class="img-fluid me-2">Delete</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="load-more"><p class="fw-bold text-center text-grey mt-4 mb-1">Load more comments</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="published" role="tabpanel" aria-labelledby="published-tab">
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="gradebook" role="tabpanel" aria-labelledby="gradebook-tab">
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="drafts" role="tabpanel" aria-labelledby="drafts-tab">
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-tab">
+                            <div class="discussion-card mb-3">
+                                <div class="card-header d-flex justify-content-between p-0 border-0">
+                                    <div class="d-flex">
+                                        <div class="me-3">
+                                            <img src="assets/images/student7.png" class="rounded-circle">
+                                        </div>
+                                        <div>
+                                            <h6 class="text-blue fw-bold">Lakshmi Ravi</h6>
+                                            <span>BE - CSE  - 2nd Sem - A</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown align-self-center">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/v-drop-dots.svg" class="img-fluid">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"><img src="assets/images/archive.svg" class="img-fluid me-2">Archive</a></li>
+                                          <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="card-body px-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                </div>
+                                <div class="card-footer border-0 pt-3 p-0 border-0">
+                                    <ul class="p-0">
+                                        <li><img src="assets/images/heart-icon.svg" class="me-2">6 likes</li>
+                                        <li><img src="assets/images/comment.svg" class="me-2">0 comments</li>
+                                    </ul>
+                                    <div class="comment-field rounded-5 d-flex">
+                                        <div class="align-self-center">
+                                            <img src="assets/images/user-profile.svg" class="me-3 rounded-circle">
+                                        </div>
+                                        <input type="text" class="form-control border-0" placeholder="Write a comment here...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="cards common-box-shadow bg-white border-radius">
+                    <div class="announcementcard">
+                        <h4 class="common-title text-dark-blue">Announcements</h4>
+                    </div>
+                    <ul class="announcement-wrapper">
+                        <li>
+                            <div class="announcementlist">
+                                <span class="announcementtags text-grey">Today</span>
+                                <h4 class="common-titletwo">Instructor HOD Meeting</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>Dean</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                                
+                                <h4 class="common-titletwo">Results Announcement</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>Aravind Raj</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                                <span class="announcementtags text-grey">Yesterday</span>
+                                <h4 class="common-titletwo">Apr/May Exam Schedul.</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>Deepan Surya</span>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="announcementlist">
+                                
+                                <h4 class="common-titletwo">Results Announcement</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>Aravind Raj</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                                <span class="announcementtags text-grey">Yesterday</span>
+                                <h4 class="common-titletwo">Apr/May Exam Schedul.</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>Deepan Surya</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="announcementcard">
+                        
+                        <a routerLink="/instructor/announcements" class="text-red">
+                            View all
+                            <img src="assets/images/arrow_forward.svg" alt="Logo"> 
+                        </a>
+                    </div>
+                </div>
+                <div class="cards common-box-shadow bg-white border-radius">
+                    <div class="announcementcard">
+                        <h4 class="common-title text-dark-blue">Tasks</h4>
+                    </div>
+                    <ul class="announcement-wrapper">
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcementlist">
+                               
+                                <h4 class="common-titletwo">K-Means Algorithm</h4>
+                                <p class="text-grey">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Integer ullamcorper...</p>
+                                    <div class="remainingdays">
+                                        <span class="text-dark-blue"><i class="fa fa-circle text-blue" aria-hidden="true"></i>BE - CSE  - 2nd Sem - B</span>
+                                       
+                                    </div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <div class="announcementcard">
+                        
+                        <a routerLink="/instructor/task" class="text-red">View all  <img src="assets/images/arrow_forward.svg" alt="Logo"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+  

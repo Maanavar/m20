@@ -75,10 +75,7 @@ export class RegistrationService {
         return this.http.post<any>(environment.API_URL + '/registration/SignUp',
         JSON.stringify(
             { 
-                firstName: register.FirstName,
-                lastName: register.LastName,
-                email: register.Email,
-                phone: register.Phone,          
+                email: register.Email,     
                 password: register.Password,          
                 confirmPassword: register.ConfirmPassword,          
                 userType: register.UserType                
@@ -116,6 +113,56 @@ export class RegistrationService {
                 console.log(res);                    
             }
             return res;
+        }))
+        .pipe(catchError(e => {
+            if (!e.error || !e.error.message) {
+                e.error = { message: 'Failed to login.' };
+            }
+            // this.notificationService.notifyError(e.error.error_info ? e.error.error_info : e.error.message);
+            return of(e);
+        }));
+    }
+
+    validateEmailExists(email: string): Observable<any>{
+        return this.http.post<any>(environment.API_URL + '/registration/ValidateEmailExists',
+        JSON.stringify(
+            { 
+                email: email               
+            }
+        ))
+        .pipe(map(res => {
+                console.log(res);                    
+                return res;
+        }))
+        .pipe(catchError(e => {
+            if (!e.error || !e.error.message) {
+                e.error = { message: 'Failed to login.' };
+            }
+            // this.notificationService.notifyError(e.error.error_info ? e.error.error_info : e.error.message);
+            return of(e);
+        }));
+    }
+
+    getStudentProfileInformation(userId: number): Observable<any> {
+        return this.http.get<any>(environment.API_URL + '/registration/GetStudentProfileInformation?userId='+ userId)
+        .pipe(map(res => {
+                console.log(res);                    
+                return res;
+        }))
+        .pipe(catchError(e => {
+            if (!e.error || !e.error.message) {
+                e.error = { message: 'Failed to login.' };
+            }
+            // this.notificationService.notifyError(e.error.error_info ? e.error.error_info : e.error.message);
+            return of(e);
+        }));
+    }
+
+    getInstructorProfileInformation(userId: number): Observable<any> {
+        return this.http.get<any>(environment.API_URL + '/registration/GetInstructorProfileInformation?userId='+ userId)
+        .pipe(map(res => {
+                console.log(res);                    
+                return res;
         }))
         .pipe(catchError(e => {
             if (!e.error || !e.error.message) {

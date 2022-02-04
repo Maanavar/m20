@@ -1,0 +1,1232 @@
+<!-- <app-main-page></app-main-page> -->
+
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>
+              <li class="breadcrumb-item active" aria-current="page">Schedules</li>
+            </ol>
+          </nav>
+          <div class="page-start">
+            <h4 class="page-title pb-4">Schedules</h4>
+
+            <div class="d-xl-flex justify-content-between  ">
+                <ul class="nav nav-tabs list-tabs mb-4 mb-xl-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button" role="tab" aria-controls="mon" aria-selected="true">Mon</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button" role="tab" aria-controls="tue" aria-selected="false">Tue</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button" role="tab" aria-controls="wed" aria-selected="false">Wed</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab" aria-controls="thu" aria-selected="false">Thu</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab" aria-controls="fri" aria-selected="false">Fri</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab" aria-controls="sat" aria-selected="false">Sat</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab" aria-controls="sun" aria-selected="false">Sun</button>
+                        </li>
+                  </ul>
+
+                  <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                    <li  class="nav-item ms-2">
+                        <button type="button" class="primary-theam-button  mt-lg-0 px-lg-4 px-1 text-lg-start py-1" data-bs-toggle="modal" data-bs-target="#addperiod">+ <span class="ms-2">New Period</span></button>
+                    </li>
+                  </ul>
+            </div>
+            <div class="tab-content mt-4" id="myTabContent">
+                <div class="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="mon-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="tue-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="wed-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="thu-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="fri-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                
+                <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="sat-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="sun-tab">
+                    <div class="table-responsive course-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th class="text-end"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>First Period</th>
+                                    <td>08:45 AM</td>
+                                    <td>09:30 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                              <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                              <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Second Period</th>
+                                    <td>09:30 AM</td>
+                                    <td>10:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Third Period</th>
+                                    <td>10:30 AM</td>
+                                    <td>11:15 AM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fourth Period</th>
+                                    <td>11:15 AM</td>
+                                    <td>12:00 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Fifth Period</th>
+                                    <td>01:00 PM</td>
+                                    <td>01:45 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Sixth Period</th>
+                                    <td>01:45 PM</td>
+                                    <td>02:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Seventh Period</th>
+                                    <td>02:45 PM</td>
+                                    <td>03:30 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Eight Period</th>
+                                    <td>03:30 PM</td>
+                                    <td>04:15 PM</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <img src="assets/images/drop-dots.svg">
+                                            </button>
+                                            <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-2 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item text-dark-blue" href="#" data-bs-toggle="modal" data-bs-target="#addperiod"><img src="assets/images/edit.svg" class="img-fluid me-2">Edit</a></li>
+                                                <li><a class="dropdown-item text-red" href="#"><img src="assets/images/delete-icon.png" class="img-fluid me-2">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+
+          </div>
+    </div>
+</div>
+<div class="modal fade" id="addperiod" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Create Period</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="nav nav-tabs general-schedule mb-4 my-3 justify-content-between" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="mo-tab" data-bs-toggle="tab" data-bs-target="#mo" type="button" role="tab" aria-controls="mo" aria-selected="true">Mo</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tu-tab" data-bs-toggle="tab" data-bs-target="#tu" type="button" role="tab" aria-controls="tu" aria-selected="false">Tu</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="we-tab" data-bs-toggle="tab" data-bs-target="#we" type="button" role="tab" aria-controls="we" aria-selected="false">We</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="th-tab" data-bs-toggle="tab" data-bs-target="#th" type="button" role="tab" aria-controls="th" aria-selected="false">Th</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fr-tab" data-bs-toggle="tab" data-bs-target="#fr" type="button" role="tab" aria-controls="fr" aria-selected="false">Fr</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sa-tab" data-bs-toggle="tab" data-bs-target="#sa" type="button" role="tab" aria-controls="sa" aria-selected="false">Sa</button>
+                </li>                                
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="su-tab" data-bs-toggle="tab" data-bs-target="#su" type="button" role="tab" aria-controls="su" aria-selected="false">Su</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="myTabContent">
+                <div class="tab-pane fade show active" id="mo" role="tabpanel" aria-labelledby="mo-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>                               
+                </div>
+                <div class="tab-pane fade" id="tu" role="tabpanel" aria-labelledby="tu-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>   
+                </div>
+                <div class="tab-pane fade" id="we" role="tabpanel" aria-labelledby="we-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>   
+                </div>
+                <div class="tab-pane fade" id="th" role="tabpanel" aria-labelledby="th-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>  
+                </div>
+                <div class="tab-pane fade" id="fr" role="tabpanel" aria-labelledby="fr-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>    
+                </div>                
+                <div class="tab-pane fade" id="sa" role="tabpanel" aria-labelledby="sa-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>    
+                </div>
+                <div class="tab-pane fade" id="su" role="tabpanel" aria-labelledby="su-tab">
+                    <form>
+                        <div class="form-group   mb-3">
+                            <label>Period</label>
+                            <input type="text" class="form-control" value="First Period" placeholder="First Period">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>Start Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div class="form-group   mb-3">
+                            <label>End Time</label>
+                            <input type="time" class="form-control" value="" placeholder="09 : 30 AM">
+                        </div>
+                        <div  class="form-group apply-checklist  mb-3 position-relative">
+                            <input  id="all" type="checkbox" value="value1" checked><label for="all"></label><strong class="text-dark-blue ">Apply to all days</strong>
+                        </div>
+                    </form>  
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Create</button>
+        </div>
+      </div>
+    </div>
+  </div>

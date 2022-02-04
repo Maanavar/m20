@@ -1,0 +1,316 @@
+<div class="main-content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="announcementWrapper">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <img src="assets/images/home.svg" alt="Logo">
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="">Task</a>
+                  </li>
+                </ul>
+                <h3 class="text-dark-blue">Task</h3>
+                <div class="announcementtabs">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Current</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Overdue</a>
+                        </li>
+                     
+                      </ul>
+                      <div class="filters">
+                          <a (click)="togglefilter()"><img src="assets/images/filter_list.svg" alt="Logo"> Filters</a>
+                        
+                      </div>
+                  
+                </div>
+               <div class="filter-list" [class.filtertoggleclass]="filterToggled">
+                   <div class="filterflex">
+                    <div class="d-flex">
+                        <div class="ng-autocomplete">
+                            <ng-autocomplete 
+                              [data]="countries"
+                              [searchKeyword]="keyword"
+                              (selected)='selectEvent($event)'
+                              (inputChanged)='onChangeSearch($event)'
+                              (inputFocused)='onFocused($event)'
+                              [itemTemplate]="itemTemplate"
+                              [notFoundTemplate]="notFoundTemplate"
+                              placeholder="Department">                                 
+                            </ng-autocomplete>
+                            
+                            <ng-template #itemTemplate let-item>
+                            <a [innerHTML]="item.name"></a>
+                           
+                            
+                            </ng-template>
+                            
+                            <ng-template #notFoundTemplate let-notFound>
+                            <div [innerHTML]="notFound"></div>
+                            </ng-template>
+                        </div>
+                        <div class="ng-autocomplete">
+                            <ng-autocomplete 
+                              [data]="countries"
+                              [searchKeyword]="keyword"
+                              (selected)='selectEvent($event)'
+                              (inputChanged)='onChangeSearch($event)'
+                              (inputFocused)='onFocused($event)'
+                              [itemTemplate]="itemTemplate"
+                              [notFoundTemplate]="notFoundTemplate"
+                              placeholder="BE">                                 
+                            </ng-autocomplete>
+                            
+                            <ng-template #itemTemplate let-item>
+                            <a [innerHTML]="item.name"></a>
+                           
+                            
+                            </ng-template>
+                            
+                            <ng-template #notFoundTemplate let-notFound>
+                            <div [innerHTML]="notFound"></div>
+                            </ng-template>
+                        </div>
+                       </div>
+                       <span class="clearfilter">
+                        Clear Filters
+                       </span>
+                   </div>
+                  
+               </div>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="announcement-list">
+                            <ul class="announcement-tiles">
+                              <li>
+                                
+                                <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                                 
+                               
+                                    <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                    <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    <div class="announcemengridimgs">
+                                      <ul class="announcementschedule announcemengridimg tasklist">
+                                       
+                                        <li>
+                                        <span class="text-grey">Subject</span>
+                                          <p class="text-dark-blue">Artificial Intelligence</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Assigned to</span>
+                                              <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Published  on</span>
+                                              <p class="text-dark-blue">20 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Deadline</span>
+                                                  <p class="text-dark-blue">30 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Remaining </span>
+                                                  <p class="text-dark-blue">04 Days</p>
+                                            </li>
+                                      </ul>
+                                     
+                                    </div>
+                                </div>
+                              </li>
+                              <li>
+                                
+                                <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                                 
+                               
+                                    <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                    <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    <div class="announcemengridimgs">
+                                      <ul class="announcementschedule announcemengridimg tasklist">
+                                       
+                                        <li>
+                                        <span class="text-grey">Subject</span>
+                                          <p class="text-dark-blue">Artificial Intelligence</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Assigned to</span>
+                                              <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Published  on</span>
+                                              <p class="text-dark-blue">20 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Deadline</span>
+                                                  <p class="text-dark-blue">30 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Remaining </span>
+                                                  <p class="text-dark-blue">04 Days</p>
+                                            </li>
+                                      </ul>
+                                     
+                                    </div>
+                                </div>
+                              </li>
+                              <li>
+                                
+                                <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                                 
+                               
+                                    <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                    <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                    <div class="announcemengridimgs">
+                                      <ul class="announcementschedule announcemengridimg tasklist">
+                                       
+                                        <li>
+                                        <span class="text-grey">Subject</span>
+                                          <p class="text-dark-blue">Artificial Intelligence</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Assigned to</span>
+                                              <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                        </li>
+                                        <li>
+                                            <span class="text-grey">Published  on</span>
+                                              <p class="text-dark-blue">20 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Deadline</span>
+                                                  <p class="text-dark-blue">30 October, 2021</p>
+                                            </li>
+                                            <li>
+                                                <span class="text-grey">Remaining </span>
+                                                  <p class="text-dark-blue">04 Days</p>
+                                            </li>
+                                      </ul>
+                                     
+                                    </div>
+                                </div>
+                              </li>
+                            </ul>
+                          
+                          </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <div class="announcement-list">
+                        <ul class="announcement-tiles">
+                            <li>
+                              
+                              <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                               
+                             
+                                  <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                  <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                  <div class="announcemengridimgs">
+                                    <ul class="announcementschedule announcemengridimg tasklist">
+                                     
+                                      <li>
+                                      <span class="text-grey">Subject</span>
+                                        <p class="text-dark-blue">Artificial Intelligence</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Assigned to</span>
+                                            <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Published  on</span>
+                                            <p class="text-dark-blue">20 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Deadline</span>
+                                                <p class="text-dark-blue">30 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Remaining </span>
+                                                <p class="text-dark-blue">04 Days</p>
+                                          </li>
+                                    </ul>
+                                   
+                                  </div>
+                              </div>
+                            </li>
+                            <li>
+                              
+                              <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                               
+                             
+                                  <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                  <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                  <div class="announcemengridimgs">
+                                    <ul class="announcementschedule announcemengridimg tasklist">
+                                     
+                                      <li>
+                                      <span class="text-grey">Subject</span>
+                                        <p class="text-dark-blue">Artificial Intelligence</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Assigned to</span>
+                                            <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Published  on</span>
+                                            <p class="text-dark-blue">20 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Deadline</span>
+                                                <p class="text-dark-blue">30 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Remaining </span>
+                                                <p class="text-dark-blue">04 Days</p>
+                                          </li>
+                                    </ul>
+                                   
+                                  </div>
+                              </div>
+                            </li>
+                            <li>
+                              
+                              <div class="announcement-cards cards common-box-shadow bg-white border-radius">
+                               
+                             
+                                  <h4 class="common-titletwo">Seminar on Sorting Algorithms</h4>
+                                  <p class="text-dark-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ullamcorper non urna id molestie. Ut ac urna id lacus porttitor imperdiet. Phasellus sed nisi enim. Fusce vel dignissim diam, a pretium turpis. Nulla varius finibus neque, ac volutpat turpis rutrum eget. Praesent eu metus dignissim, elementum ante eu, euismod magna. Nunc blandit risus non tortor gravida varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed in lacinia magna, vitae dapibus lectus. Sed odio nunc, ornare ac dui at, auctor dignissim libero. Nunc lobortis scelerisque augue eget tincidunt. </p>
+                                  <div class="announcemengridimgs">
+                                    <ul class="announcementschedule announcemengridimg tasklist">
+                                     
+                                      <li>
+                                      <span class="text-grey">Subject</span>
+                                        <p class="text-dark-blue">Artificial Intelligence</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Assigned to</span>
+                                            <p class="text-dark-blue">BE - CSE - 2nd Sem - B</p>
+                                      </li>
+                                      <li>
+                                          <span class="text-grey">Published  on</span>
+                                            <p class="text-dark-blue">20 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Deadline</span>
+                                                <p class="text-dark-blue">30 October, 2021</p>
+                                          </li>
+                                          <li>
+                                              <span class="text-grey">Remaining </span>
+                                                <p class="text-dark-blue">04 Days</p>
+                                          </li>
+                                    </ul>
+                                   
+                                  </div>
+                              </div>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                   
+                  </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</div>
+

@@ -1,0 +1,104 @@
+<div class="auth-page">
+  <img src="../../../../../assets/images/shape.svg" alt="" class="shape">
+  <!-- <img src="../../../../../assets/images/Union.svg" alt="" class="shape tabshape"> -->
+  <section class="navbars">
+    <div class="containers">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="mainlogo">
+            <img src="../../../../../assets/images/Logo.svg" alt="">
+          </div>
+        </div>
+        <!-- <div class="col-md-6" *ngIf="step !=2">
+          <div class="rightside">
+           <a href="" class="notmember">Not a member yet?</a>
+           <a routerLink="/register" class="registerbtn">Register Now</a>
+          </div>
+        </div> -->
+      </div>
+
+
+    </div>
+  </section>
+  <div class="fxt-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="loginwrapper">
+          <div *ngIf="step == 1">
+            <img src="../../../../../assets/images/mlogo.svg" alt="">
+            <h3>Member Login</h3>
+            <p>Access your
+              pocket classroom with
+              Maanavar</p>
+            <form [formGroup]="emailForm" role="form" (ngSubmit)="onEmailFormSubmit()">
+              <div class="fxt-form">
+                <div class="form-group">
+                  <label for="email" class="input-label">Email</label>
+                  <input type="email" class="form-control" name="email" formControlName="email" placeholder="Enter email"
+                    required="required">
+                    <div *ngIf="emailFormSubmitted && ef.email.errors" class="required">
+                      <span *ngIf="ef.email.errors.required">Email is required</span>
+                      <span *ngIf="ef.email.errors.email">Invalid Email Format</span>
+                    </div>
+                </div>
+                <button type="submit" class="loginbtn btn">Continue to Login</button>
+              </div>
+            </form>
+          </div>
+          <div *ngIf="step == 2">
+            <span id="back" (click)="back()"><i class="fas fa-arrow-left"></i></span>
+          <h3>Member Login</h3>
+          <p>Access your
+            pocket classroom with
+            <span class="text-blue">Maanavar</span>
+            </p>
+            <div class="fxt-form">
+              <div class="form-group">
+                <label for="email" class="input-label">Email</label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Enter email" required="required">
+             </div>
+             <a class="loginbtn btn">Continue to Login</a>
+            </div>
+          </div>
+          <div *ngIf="step == 2">
+            <span (click)="back()" class="arrowleft"><i class="fas fa-arrow-left"></i></span>
+            <img src="../../../../../assets/images/wisdomlogo.svg" alt="">
+            <h3>Wisdom Academy</h3>
+            <p>Hey, Aniz ! Enter your password to get into your institution</p>
+            <form [formGroup]="loginForm" role="form" (ngSubmit)="onSubmit()">
+              <div class="fxt-form">
+                <div class="form-group">
+                  <label for="email" class="input-label">Email</label>
+                  <input type="email" class="form-control" name="email" formControlName="email"
+                    placeholder="Enter email" required="required">
+                  <div *ngIf="loginFormSubmitted && lf.email.errors" class="required">
+                    <span *ngIf="lf.email.errors.required">Email is required</span>
+                    <span *ngIf="lf.email.errors.email">Invalid Email Format</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="password" class="input-label">Passwords</label>
+                  <input type="password" class="form-control" name="password" formControlName="password"
+                    placeholder="Enter password" required="required">
+                  <div *ngIf="loginFormSubmitted && lf.password.errors" class="required">
+                    <span *ngIf="lf.password.errors.required">Password is required</span>
+                    <span *ngIf="lf.password.errors.minlength">Password should be 8 minimum characters only</span>
+                  </div>
+                </div>
+                <button type="submit" class="loginbtn btn" [disabled]="invalidPasswordAttemptCount == 4">Login to your
+                  institution</button>
+                <div class="fxt-footer">
+                  <p>Forgot your password? <a routerLink="/forgotpassword"> Send me reset link</a> </p>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights">
+    <p>All Rights Reserved © 2024 Maanavar</p>
+  </div>
+</div>

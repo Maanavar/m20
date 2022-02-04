@@ -90,10 +90,8 @@ export class AuthenticationService {
         return this.http.post<any>(environment.API_URL + '/Auth/AuthenticateResetPassword', 
         JSON.stringify({ userId: userId, token: token }))
         .pipe(map(res => {
-            if (res && res.successCode == "1") {
                 console.log(res);                    
-            }
-            return res;
+                return res;
         }))
         .pipe(catchError(e => {            
             return of(e);

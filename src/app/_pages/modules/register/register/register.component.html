@@ -1,0 +1,123 @@
+<div class="auth-page">
+  <img src="../../../../../assets/images/shape.svg" alt="" class="shape">
+  <!-- <img src="../../../../../assets/images/Union.svg" alt="" class="shape tabshape"> -->
+  <section class="navbars">
+    <div class="containers">
+      <div class="row align-items-center">
+        <div class="col-md-6 col">
+          <div class="mainlogo" routerLink="/login">
+            <img src="../../../../../assets/images/Logo.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col">
+          <div class="rightside">
+            <a href="#" class="notmember">Already have an account?</a>
+            <a routerLink="/login" class="registerbtn">Login Now</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <div class="fxt-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="loginwrapper">
+
+          <h3>Create Account</h3>
+          <form [formGroup]="registrationForm" role="form" (ngSubmit)="onSubmit()">
+            <div class="fxt-form">
+              <!-- <div class="form-group">
+                <label class="radioinput-label">I am a/an</label>
+                <div class="custom_radio">
+                  <span>
+                    <input type="radio" id="test1" name="radio-group" formControlName="userType" checked value="1">
+                    <label for="test1" class="customlabel">Instructor/Teacher</label>
+                  </span>
+                  <span>
+                      <input type="radio" id="test1" name="radio-group" formControlName="userType" value="2">
+                    <label for="test2" class="customlabel">Institution Member</label>
+                  </span>
+                </div>
+                <div *ngIf="submitted && f.userType.errors" class="required">
+                  <span *ngIf="f.userType.errors.required">User Type is required</span>
+                </div>
+              </div> -->
+              <div class="form-group">
+                <label for="firstName" class="input-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" formControlName="firstName"
+                  placeholder="Enter First Name" required="required">
+                <div *ngIf="submitted && f.firstName.errors" class="required">
+                  <span *ngIf="f.firstName.errors.required">First Name is required</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="institutionName" class="input-label">Institution Name</label>
+                <input type="text" class="form-control" name="institutionName" formControlName="institutionName"
+                  placeholder="Enter Institution Name" required="required">
+                <div *ngIf="submitted && f.institutionName.errors" class="required">
+                  <span *ngIf="f.institutionName.errors.required">Institution Name is required</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="input-label">Email Address</label>
+                <input type="email" class="form-control" name="email" formControlName="email"
+                  placeholder="Enter email" required="required">
+                <div *ngIf="submitted && f.email.errors" class="required">
+                  <span *ngIf="f.email.errors.required">Email is required</span>
+                  <span *ngIf="f.email.errors.email">Invalid Email</span>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <label for="email" class="input-label">Password</label>
+                <div class="togglepass">
+                  <input type="Password" [type]="showPassword ? 'text' : 'password'" id="email" class="form-control"
+                    name="password" formControlName="password" placeholder="Enter Password" required="required">
+
+                  <i alt="show" class="far fa-eye eye-show" (click)="showPassword = !showPassword"
+                    [class.hide]="showPassword"></i>
+                  <i alt="hide" class="far fa-eye-slash eye-hide" (click)="showPassword = !showPassword"
+                    [class.hide]="!showPassword"></i>
+                </div>
+                <div *ngIf="submitted && f.password.errors" class="required">
+                  <span *ngIf="f.password.errors.required">Password is required</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="input-label">Confirm Password</label>
+                <input type="Password" class="form-control" name="confirmPassword" formControlName="confirmPassword"
+                  placeholder="Enter Confirm Password" required="required">
+                <div *ngIf="submitted && f.confirmPassword.errors" class="required">
+                  <span *ngIf="f.confirmPassword.errors.required">Confirm Password is required</span>
+                  <span *ngIf="f.confirmPassword.errors.matching">Confirm Password does not match with
+                    Password</span>
+                </div>
+              </div> -->
+              <button type="submit" class="loginbtn btn" >Create Account</button>
+              <div class="fxt-footer">
+                <p>By continuing, you agree to our</p>
+                <div>
+                  <ul>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">.</a></li>
+                    <li><a href="">Privacy Policy </a></li>
+                    <li><a href="">. </a></li>
+                    <li><a href="">Content Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </form>
+       <a href="#" class="notmember">Already have an account?</a>
+       <a routerLink="/login" class="registerbtn">Login Here</a>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+   
+  <div class="copyrights">
+    <p>All Rights Reserved © 2024 Maanavar</p>
+  </div>
+</div>

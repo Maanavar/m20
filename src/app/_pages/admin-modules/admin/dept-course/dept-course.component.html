@@ -1,0 +1,66 @@
+<!-- <app-main-page></app-main-page> -->
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>              
+              <li class="breadcrumb-item me-2"><a href="#">Syllabus</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Dept of Computer Science Engineering</li>
+            </ol>
+        </nav>
+            <div class="page-start">
+                <div class="d-xl-flex justify-content-between mb-2">
+                    <h4 class="page-title align-self-center mb-0" routerLink="/admin/admin-syllabus"><img src="assets/images/back-arrow.svg" class="img-fluid me-2">Dept of Computer Science Engineering</h4>
+                    <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                        <li class="bg-white text-grey mx-2 align-self-center">
+                            <a href="#" class="filter "><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="table-responsive course-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Short Code</th>
+                                <th>Programme</th>
+                                <th>No of Semesters</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th routerLink="/admin/admin-syllabus/admin-course-semester">Computer Science</th>
+                                <td>CSE</td>
+                                <td>BE</td>
+                                <td>08</td>
+                            </tr>
+                            <tr>
+                                <th routerLink="/admin-course-semester">Computer Application</th>
+                                <td>CA</td>
+                                <td>BTECH</td>
+                                <td>08</td>
+                            </tr>
+                            <tr>
+                                <th routerLink="/admin-course-semester">Data Anaylist</th>
+                                <td>Mech</td>
+                                <td>BE</td>
+                                <td>08</td>
+                            </tr>
+                            <tr>
+                                <th routerLink="/admin-course-semester">Programme Languages</th>
+                                <td>Civil</td>
+                                <td>BE</td>
+                                <td>08</td>
+                            </tr>
+                            <tr>
+                                <th routerLink="/admin-course-semester">Computer Hardware</th>
+                                <td>MSE</td>
+                                <td>ME</td>
+                                <td>08</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>

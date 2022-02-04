@@ -1,0 +1,21 @@
+@media only screen and (max-width: 568px) and (min-width: 320px){
+    .announcementtabs ul{
+        // display: inline-flex;
+    }
+    .announcemengridimgsec{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 5px;
+    }
+    .announcementschedule{
+        display: block;
+        margin-top: 0;
+    }
+    .announcementschedule li{
+        margin-left: 0;
+        margin-bottom: 10px !important;
+    }
+    .announcementtabs ul{
+        display: inline-flex;
+    }
+}

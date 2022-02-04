@@ -1,0 +1,159 @@
+<!-- <app-main-page></app-main-page> -->
+<div class="wrapper-inner px-lg-5 px-3 py-4">
+    <div class="page-section">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-4">
+              <li class="breadcrumb-item me-2"><a href="#"><img src="assets/images/home-big-icon.svg"></a></li>              
+              <li class="breadcrumb-item me-2"><a href="#">Syllabus</a></li>              
+              <li class="breadcrumb-item me-2"><a href="#">Dept of Computer Science Engineering</a></li>
+              <li class="breadcrumb-item me-2"><a href="#">Computer Science</a></li>
+              <li class="breadcrumb-item active" aria-current="page">1st Semester</li>
+            </ol>
+        </nav>
+            <div class="page-start">
+                <div class="d-xl-flex justify-content-between mb-2">
+                    <h4 class="page-title align-self-center mb-0" routerLink="/admin/admin-syllabus/admin-course-semester"><img src="assets/images/back-arrow.svg" class="img-fluid me-2">1st Semester</h4>
+                    <ul class="nav nav-tabs list-tab-right border-0" id="myTab" role="tablist">
+                        <li class="bg-white text-grey mx-2 align-self-center">
+                            <a href="#" class="filter "><img src="assets/images/filter_list.svg" class="img-fluid me-1">Filters</a>
+                        </li>
+                        <li class="nav-item ms-2"><button type="button"  class="primary-theam-button mt-lg-0 px-lg-4 px-1 text-lg-start py-1" tabindex="0" data-bs-toggle="modal" data-bs-target="#addsubject">+ <span class="ms-2">Add Subjects</span></button></li>
+                    </ul>
+                </div>                
+                <div class="table-responsive course-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Subject Name</th>
+                                <th>Subject Code</th>
+                                <th>Subject Type</th>
+                                <th>Tutorial Type</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Design and Analysis Of Algorithms</th>
+                                <td>IT26463</td>
+                                <td>Core</td>
+                                <td>Theoretical</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                          <li><a class="dropdown-item text-dark-blue" href="#"> new subject</a></li>                                          
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Data Structures</th>
+                                <td>IT26463</td>
+                                <td>Core</td>
+                                <td>Practical</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-dark-blue" href="#">new subject</a></li>                                          
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Digital Electronics</th>
+                                <td>IT26463</td>
+                                <td>Elective</td>
+                                <td>Theoretical</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-dark-blue" href="#">new subject</a></li>                                          
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Object Oriented Programming</th>
+                                <td>IT26463</td>
+                                <td>Core</td>
+                                <td>Theoretical</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-dark-blue" href="#">new subject</a></li>                                          
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Operating Systems</th>
+                                <td>IT26463</td>
+                                <td>Elective</td>
+                                <td>Theoretical</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <img src="assets/images/drop-dots.svg">
+                                        </button>
+                                        <ul class="dropdown-menu  bg-white card-shadow border-0 mt-lg-4 pe-3 py-2 dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-dark-blue" href="#">new subject</a></li>                                          
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="modal fade" id="addsubject" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Add Subject</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/dismiss.svg"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group   mb-3">
+                    <label>Subject Type</label>
+                    <select aria-label="Default select example" class="form-select">
+                        <option selected="">core</option>
+                        <option value="1">elective</option>
+                    </select>
+                </div>
+                <div class="form-group   mb-3">
+                    <label>Tutorial Type</label>
+                    <select aria-label="Default select example" class="form-select">
+                        <option selected="">theoretical</option>
+                        <option value="1">practical</option>
+                    </select>
+                </div>
+                <div class="form-group   mb-3">
+                    <label>Tutorial Type</label>
+                   <input type="search" class="form-control" placeholder="Search subject code / name">
+                   <div class="subject-code mt-2 mb-3">
+                       <p>IT2515 - Data Structures</p>
+                   </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer justify-content-between px-5">
+            <button class="btn text-grey px-0 cancel" >Cancel</button>
+            <button type="button" class="primary-theam-button  mt-lg-0 px-lg-5 px-1 text-lg-start" >Create</button>            
+        </div>
+      </div>
+    </div>
+  </div>

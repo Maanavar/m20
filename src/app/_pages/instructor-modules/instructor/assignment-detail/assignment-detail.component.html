@@ -1,0 +1,333 @@
+
+                        <div class="d-xl-flex justify-content-between mb-3">
+                            <h4 class="text-blue fw-bold  align-self-center" routerLink="/instructor/instructor-course-list/subject-folder"><img src="assets/images/blue-back-arrow.svg" class="me-2">K-Means Clustering</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 pe-lg-4">
+                                <div class="d-xl-flex justify-content-between  pb-3">
+                                    <ul class="nav nav-tabs list-tabs mb-4 mb-xl-0" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="current-tab" data-bs-toggle="tab" data-bs-target="#current" type="button" role="tab" aria-controls="current" aria-selected="true">Assignment</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="passed-tab" data-bs-toggle="tab" data-bs-target="#passed" type="button" role="tab" aria-controls="passed" aria-selected="false">Submissions</button>
+                                        </li>
+                                      </ul>
+                                      <ul class="nav nav-tabs list-tab-right border-0 align-self-center" id="myTab" role="tablist">
+                                        <li class="text-dark-blue fw-bold mx-3">
+                                          <img src="assets/images/edit.svg" class="me-1">Edit
+                                        </li>
+                                        <li class="text-dark-blue fw-bold mx-3">
+                                          <img src="assets/images/archive.svg" class="me-1">Archive
+                                        </li>
+                                        <li class="text-dark-blue fw-bold mx-3">
+                                            <img src="assets/images/delete-icon.svg" class="me-1">Delete
+                                          </li>
+                                      </ul>
+                                </div>
+                                <div class="tab-content " id="myTabContent">
+                                    <div class="tab-pane fade show active mt-4" id="current" role="tabpanel" aria-labelledby="current-tab">
+                                        <div class="row">
+                                            <div class="profile-card card-shadow bg-white p-0 mb-3 review-block p-4">
+                                                <div class="card-title p-2">
+                                                    <h4 class="text-dark-blue fw-bold mb-0">Syllabus</h4>
+                                                </div>
+                                                <div class="card-body p-2">
+                                                    <p class="text-dark-blue mb-0">The object of this course is to teach students the general concepts of relational databases and how to design a database that is anomaly free. Students will learn to design, create, populate, and query a database by working with the Oracle ™ database engine and the SQL language. Students will also learn basic database administration skills such as creating users, granting/revoking privileges individually or collectively to several users through the use of roles.</p>
+                                                    <div class="mt-4">
+                                                        <p class="fw-bold text-dark-blue">The main objectives of this course are:</p>
+                                                        <ul class="px-4 m-0">
+                                                            <li>To emphasize the features of a Relational Database, in particular, the most widely used model, the relational model, and the use of the Oracle ™. Know the basic components of a relational database management system (RDBMS) and how these parts interact during the normal activities of a database engine.</li>
+                                                            <li>To construct a conceptual model (E/R diagram) and a physical model (Relational Design) from a general data description that runs in an Oracle ™ engine. Create and populate the database and impose the necessary constraints to satisfy data integrity and operational requirements.</li>
+                                                            <li>To normalize a database from 1NF to BCNF and the necessity of this process to avoid data anomalies by identifying partial and transitive functional dependencies by the correct application of Armstrong’s inference axioms.</li>
+                                                            <li>To write queries in SQL that implement the theoretical relational database operators such as selection, projection, joins. Learn how to impose and enforce constraints on the data to satisfy the requirements of some of the normal forms.</li>
+                                                            <li>To write queries in SQL that uses features such as group function (AVG, MIN, MAX, COUNT), individual functions (arithmetic functions, character, conversion functions), processing of date and time information using functions such as TO_DATE, SYSDATE pseudo columns.</li>
+                                                            <li>To write basic reports using the BREAK and COMPUTE commands of SQL Plus™.</li>
+                                                            <li>To write complex queries (subqueries, correlated queries, update tables, inserting/deleting rows from tables using subqueries) and hiding data through the use of Views.</li>
+                                                            <li>To be able to accomplish basic administrative tasks such as create/delete users, grant/revoke privileges to users individually or through roles.</li>
+                                                            <li>Managing a successful semester-long project from initial description through design, creation, and implementation.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade " id="passed" role="tabpanel" aria-labelledby="passed-tab">
+                                        <div class="table-responsive course-table">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="std-name">Name</th>
+                                                        <th>Submission Date</th>
+                                                        <th>Marks</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student1.png" class="img-fluid me-3"> Wilson Kilbert
+                                                        </th>
+                                                        <td>27 October, 2021</td>
+                                                        <td class="text-dark-blue fw-bold">84 %</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 " routerLink="/instructor/instructor-course-list/subject-folder/view-assignment">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student2.png" class="img-fluid me-3"> Wilson Kilbert
+                                                        </th>
+                                                        <td>23 October, 2021</td>
+                                                        <td class="text-dark-blue fw-bold">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student3.png" class="img-fluid me-3"> Deepan Remijious
+                                                        </th>
+                                                        <td class="text-dark-red">Not yet</td>
+                                                        <td class="text-dark-red">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student4.png" class="img-fluid me-3"> Ruban Karthik
+                                                        </th>
+                                                        <td>21 OCtober, 2021</td>
+                                                        <td>43</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student5.png" class="img-fluid me-3"> Jai Surya
+                                                        </th>
+                                                        <td class="text-dark-red">Not yet</td>
+                                                        <td class="text-dark-red">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student6.png" class="img-fluid me-3"> Deva Rajan
+                                                        </th>
+                                                        <td>19 October, 2021</td>
+                                                        <td>66</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student1.png" class="img-fluid me-3"> Wilson Kilbert
+                                                        </th>
+                                                        <td>27 October, 2021</td>
+                                                        <td class="text-dark-blue fw-bold">84 %</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student2.png" class="img-fluid me-3"> Wilson Kilbert
+                                                        </th>
+                                                        <td>23 October, 2021</td>
+                                                        <td class="text-dark-blue fw-bold">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student3.png" class="img-fluid me-3"> Deepan Remijious
+                                                        </th>
+                                                        <td class="text-dark-red">Not yet</td>
+                                                        <td class="text-dark-red">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student4.png" class="img-fluid me-3"> Ruban Karthik
+                                                        </th>
+                                                        <td>21 OCtober, 2021</td>
+                                                        <td>43</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student5.png" class="img-fluid me-3"> Jai Surya
+                                                        </th>
+                                                        <td class="text-dark-red">Not yet</td>
+                                                        <td class="text-dark-red">N/A</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 disabled">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <th >
+                                                          <img src="assets/images/student6.png" class="img-fluid me-3"> Deva Rajan
+                                                        </th>
+                                                        <td>19 October, 2021</td>
+                                                        <td>66</td>
+                                                        <td>
+                                                            <button type="button"  class="button-light-red mt-lg-0 ">View Assignment</button>
+                                                        </td>                                                        
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="assignment-card card-shadow pt-1 py-4 mb-4">
+                                    <div class="card-header bg-0 pb-3">
+                                        <span>Status</span>
+                                        <h6 class="text-blue fw-bold mt-2"><img src="assets/images/rocket.svg" class="me-2"> Published</h6>
+                                    </div>
+                                    <div class="card-body bg-0 ">
+                                       <div class="row">
+                                           <div class="col-4 text-center">
+                                                <div class="circular-progress blue">
+                                                    <span class="progress-left">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">45/50</div>
+                                                </div>
+                                                <p>Submissions</p>
+                                           </div>
+                                           <div class="col-4">
+                                                <div class="circular-progress red">
+                                                    <span class="progress-left">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">12/50</div>
+                                                </div>
+                                                <p>Graded</p>
+                                           </div>
+                                           <div class="col-4">
+                                                <div class="circular-progress green">
+                                                    <span class="progress-left">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value">11/50</div>
+                                                </div>
+                                                <p>Passed</p>
+                                        </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-footer bg-0">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <h6 class="fw-bold text-dark-blue">Average Score</h6>
+                                            <h6 class="fw-bold text-dark-blue">84 / 100</h6>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 84%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class=" mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <h6 class="fw-bold text-dark-blue">Deadline</h6>
+                                        <a href="" class="fw-bold text-dark-blue text-decoration-none"><img src="assets/images/edit.svg" class="me-1"> Edit</a>
+                                    </div>
+                                    <div class="deadline-card">
+                                        <div class="d-flex justify-content-between mb-4">
+                                            <div>
+                                                <span>Assigned on</span>
+                                                <h5>24th November 2021</h5>
+                                            </div>
+                                            <div>
+                                                <span>Deadline</span>
+                                                <h5>31st December 2021</h5>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative">
+                                            <span class="left-bar"></span>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span class="right-bar"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moderators mt-3 mb-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="pe-3">
+                                            <h6 class="fw-bold text-dark-blue mb-2">Documents</h6>
+                                        </div>
+                                        <a href="" class="fw-bold text-dark-blue text-decoration-none"><img src="assets/images/edit.svg" class="me-1"> Edit</a>
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-2">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2 align-self-center">
+                                                <img src="assets/images/word-icon.svg" >
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">documentname.doc</h6>
+                                                <span>125 Kb</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/download.svg" >
+                                    </div>
+                                    <div class="moderators-card card-shadow d-flex justify-content-between py-2 px-3 mb-2">
+                                        <div class="d-flex py-1">
+                                            <div class="me-2 align-self-center">
+                                                <img src="assets/images/power-point-icon.svg" >
+                                            </div>
+                                            <div>
+                                                <h6 class="text-dark-blue mb-0">documentname.pdf</h6>
+                                                <span>125 Kb</span>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/download.svg" >
+                                    </div>
+                                </div>
+                                <div class="marks-prograss">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="pe-3">
+                                            <h6 class="fw-bold text-dark-blue mb-2">Marks</h6>
+                                        </div>
+                                        <a href="" class="fw-bold text-dark-blue text-decoration-none"><img src="assets/images/edit.svg" class="me-1"> Edit</a>
+                                    </div>
+                                    <div class="marks-card">
+                                        
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div>
+                                                <span>Minimum Pass Marks on</span>
+                                                <h6 class="fw-bold text-dark-blue">35</h6>
+                                            </div>
+                                            <div>
+                                                <span>Maximum Marks</span>
+                                                <h6 class="fw-bold text-dark-blue">100</h6>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar min-bar" role="progressbar" style="width: 35%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar max-bar" role="progressbar" style="width: 100%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
